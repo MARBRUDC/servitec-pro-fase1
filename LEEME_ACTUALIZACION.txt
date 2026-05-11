@@ -1,0 +1,20 @@
+SERVITEC PRO FASE 1 - QA FIX
+
+ARCHIVOS PARA GITHUB PAGES:
+1) index.html
+2) manifest.json
+
+ARCHIVO OPCIONAL PARA APPS SCRIPT:
+3) LIMPIEZA_QA.gs
+   - No reemplaza Code.gs.
+   - Se pega como archivo adicional si deseas limpiar duplicados o reiniciar pruebas.
+
+FUNCIONES OPCIONALES DE LIMPIEZA:
+- servitecCrearBackup()
+- servitecDeduplicarBase()
+- servitecLimpiarOperacionPruebas()
+- servitecResetCorrelativoCotizacion207()
+
+IMPORTANTE:
+- No ejecutar limpieza sin antes crear backup.
+- Para imprimir PDF sin about:blank, en el cuadro de impresión desactivar “Encabezados y pies de página”.
