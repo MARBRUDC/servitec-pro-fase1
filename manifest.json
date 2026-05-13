@@ -1,0 +1,8 @@
+{
+  "name": "SERVITEC PRO FASE 2.4",
+  "short_name": "SERVITEC",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eef7fb",
+  "theme_color": "#0f766e"
+}
