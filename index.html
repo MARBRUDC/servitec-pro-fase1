@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>SERVITEC PRO FASE 3.4 STORAGE + EQUIPOS COTIZACION</title>
+<style>
+:root{--pri:#0ea5e9;--sec:#0f766e;--ok:#16a34a;--danger:#dc2626;--bg:#eef7fb;--ink:#06132b;--muted:#64748b;--card:#fff;--line:#d6e3ef}
+*{box-sizing:border-box}button:disabled{opacity:.55;cursor:not-allowed} .syncWarn{background:#fff7ed;border-left:5px solid #f97316;padding:10px;border-radius:12px;margin:10px 0;color:#7c2d12;font-weight:700} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#e8f8ff,#f8fbff);color:var(--ink);padding-bottom:86px}header{background:linear-gradient(135deg,#0f4c75,#0f766e);color:#fff;padding:22px 18px;border-radius:0 0 28px 28px;display:flex;gap:14px;align-items:center;justify-content:space-between}.brand{display:flex;gap:14px;align-items:center}.logo{width:70px;height:70px;border-radius:18px;background:#fff;color:#0f4c75;font-weight:900;font-size:26px;display:grid;place-items:center;overflow:hidden}.logo img{width:100%;height:100%;object-fit:contain}.brand h1{margin:0;font-size:30px}.brand p{margin:6px 0 0;font-weight:700}.pill{padding:10px 14px;border-radius:20px;background:rgba(255,255,255,.18);font-weight:700}.wrap{max-width:1180px;margin:0 auto;padding:16px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 10px 30px rgba(15,76,117,.07)}.metric{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.06)}.metric b{font-size:36px;display:block}.metric span{font-weight:700;color:#47637b}.view{display:none}.view.active{display:block}input,select,textarea{width:100%;padding:13px;border:1px solid #c9d8e7;border-radius:14px;margin:6px 0 10px;font-size:15px;background:#fff}textarea{min-height:80px}button,.btn{border:0;border-radius:13px;padding:12px 16px;background:var(--pri);color:#fff;font-weight:800;cursor:pointer;margin:4px}button.gray{background:#e2e8f0;color:#0f172a}button.green{background:var(--ok)}button.red{background:var(--danger)}button.teal{background:var(--sec)}button.small{padding:8px 10px;border-radius:10px;font-size:12px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.listItem{border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0;background:#fff}.listHead{display:flex;justify-content:space-between;gap:12px}.muted{color:var(--muted);font-weight:600}.tabs{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #dbe7f3;padding:8px;display:flex;gap:5px;justify-content:center;z-index:10}.tabs button{background:#f1f5f9;color:#0f172a;min-width:95px}.tabs button.active{background:var(--sec);color:#fff}.table{width:100%;border-collapse:collapse;margin-top:10px}.table th,.table td{border:1px solid #d9e2ec;padding:8px;text-align:left}.table th{background:#f8fafc}.partCard{background:#f8fafc;border:1px solid #dbeafe;border-radius:14px;padding:12px;margin:8px 0}.photoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.photoBox{border:1px dashed #94a3b8;border-radius:14px;padding:10px;background:#f8fafc}.photoBox img{max-width:100%;border-radius:10px;margin-top:6px}.signature{border:1px dashed #94a3b8;border-radius:14px;background:#fff;width:100%;height:160px;touch-action:none}.notice{background:#ecfeff;border-left:5px solid var(--pri);padding:12px;border-radius:12px;margin:10px 0}.hidden{display:none!important}.menuWrap{position:relative}.menuBtn{background:rgba(255,255,255,.22);font-size:24px;padding:8px 13px}.dropMenu{display:none;position:absolute;right:0;top:48px;background:#fff;color:#0f172a;border:1px solid #d6e3ef;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.18);padding:8px;min-width:220px;z-index:30}.dropMenu button{display:block;width:100%;background:#f8fafc;color:#0f172a;text-align:left;margin:4px 0}.dropMenu.show{display:block}.docCheck{display:flex;gap:8px;align-items:center;background:#ecfeff;border:1px solid #bae6fd;padding:8px;border-radius:12px;margin:8px 0}.docCheck input{width:auto;margin:0}.watermark{position:fixed;left:12%;top:28%;width:76%;opacity:.06;z-index:-1}.firmaImg{max-width:230px;max-height:90px}.corporateQuote{font-size:12px}.corporateQuote h1{font-size:24px}.condBox{border:1px solid #111;padding:8px;margin-top:8px}.hidden{display:none!important}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.row{display:block}.tabs{overflow:auto;justify-content:flex-start}.tabs button{min-width:84px}.brand h1{font-size:24px}.photoGrid{grid-template-columns:1fr}}
+@media print{body{background:#fff;padding:0}.noPrint,.tabs,header{display:none!important}.printDoc{display:block!important}.card{box-shadow:none;border:0}.printPage{padding:20px;font-size:13px}.printLogo{max-width:135px;max-height:90px}.printHead{display:flex;gap:22px;align-items:flex-start;border-bottom:3px solid #0ea5e9;padding-bottom:14px}.printTitle{font-size:22px;font-weight:900;margin:18px 0}.table th,.table td{font-size:12px}.pageBreak{page-break-before:always}}
+.qrBox{display:flex;align-items:center;gap:14px;padding:12px;border:1px dashed #cbd5e1;border-radius:16px;margin-top:12px}.qrBox img{width:130px;height:130px}.small{font-size:12px;padding:6px 8px}
+
+.busyOverlay{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:99999;display:none;align-items:center;justify-content:center;padding:18px}
+.busyBox{background:#fff;border-radius:18px;padding:22px;max-width:340px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.25);font-weight:800;color:#0f172a}
+.busySpinner{width:38px;height:38px;border:5px solid #dbeafe;border-top-color:#0ea5e9;border-radius:50%;margin:0 auto 12px;animation:spin .85s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+body.appBusy{overflow:hidden}
+body.appBusy button,body.appBusy input,body.appBusy select,body.appBusy textarea{pointer-events:none}
+</style>
+
+<style>
+.photoBox img{max-width:100%;max-height:190px;object-fit:cover;border-radius:12px;border:1px solid #d1d5db;margin:6px 0}.photoBox input{width:100%;font-size:12px}.loadingMini{opacity:.75;font-size:12px}.perfBadge{font-size:11px;color:#0f766e;font-weight:700}
+</style>
+</head>
+<body>
+<header class="noPrint"><div class="brand"><div class="logo" id="logoBox">SP</div><div><h1>SERVITEC PRO</h1><p id="empresaInfo">Sin empresa activa</p></div></div><div class="row" style="flex:0;gap:8px"><div class="pill" id="netState">Verificando...</div><div class="menuWrap"><button class="menuBtn" onclick="toggleTopMenu()">⋮</button><div id="topMenu" class="dropMenu"><button onclick="showView('empresas');toggleTopMenu(false)">Empresas</button><button onclick="showView('clientes');toggleTopMenu(false)">Clientes</button><button onclick="showView('config');toggleTopMenu(false)">Configuración / Correlativos</button><button onclick="showView('qrlogistica');toggleTopMenu(false)">QR / Repuestos</button><button onclick="showView('usuarios');toggleTopMenu(false)">Usuarios y roles</button><button onclick="showView('sync');toggleTopMenu(false)">Sincronización</button></div></div></div></header>
+<div class="wrap noPrint">
+<section id="home" class="view active"><div class="card"><h2>Dashboard gerencial</h2><div class="notice"><b>Empresa activa:</b> <span id="dashEmpresa">Sin empresa</span> · <b>Última sincronización:</b> <span id="dashSync">Pendiente</span></div><div class="row"><button class="green" onclick="showView('cotiza')">+ Nueva cotización</button><button class="teal" onclick="showView('ordenes')">+ Nueva orden</button><button onclick="showView('ejecucion')">Ejecutar servicio</button><button class="gray" onclick="showView('informes')">Crear informe</button></div></div><div class="grid"><div class="metric"><b id="mEmp">0</b><span>Empresas</span></div><div class="metric"><b id="mCli">0</b><span>Clientes</span></div><div class="metric"><b id="mCot">0</b><span>Cotizaciones</span></div><div class="metric"><b id="mOrd">0</b><span>Órdenes</span></div></div><div class="grid"><div class="metric"><b id="mEjec">0</b><span>En ejecución</span></div><div class="metric"><b id="mActas">0</b><span>Actas</span></div><div class="metric"><b id="mInf">0</b><span>Informes</span></div><div class="metric"><b id="mPend">0</b><span>Pendientes sync</span></div></div></section>
+<section id="sync" class="view"><h2>Sincronización</h2><div class="card"><p class="muted">Configuración de conexión con Google Apps Script. Se deja fuera del Inicio para que el dashboard quede limpio.</p><div class="row"><select id="empresaActiva"></select><button class="teal" onclick="setEmpresaActiva()">Activar empresa</button></div><div class="row"><input id="apiUrl" placeholder="URL Apps Script /exec"/><button onclick="saveApiUrl()">Guardar URL</button><button class="green" onclick="pullGoogle()">Descargar datos Google</button><button class="teal" onclick="syncPendientes()">Sincronizar pendientes</button></div><p id="syncMsg" class="muted">Listo para sincronizar.</p><div class="syncWarn">Modo campo máximo: la app usa primero datos locales, evita llamadas repetidas a Google y protege tu trabajo si Apps Script marca cuota excedida. Usa Descargar solo cuando realmente necesites refrescar.</div><div class="row"><button class="gray" onclick="usarCacheLocal()">Usar respaldo local</button><button class="gray" onclick="limpiarBloqueoSync()">Liberar bloqueo descarga</button><button class="gray" onclick="limpiarStoragePesado()">Limpiar storage pesado</button></div><div id="pendientesList"></div></div></section>
+<section id="empresas" class="view"><h2>Empresas</h2><div class="card"><input id="eRazon" placeholder="Razón social"><input id="eRuc" placeholder="RUC"><input id="eDir" placeholder="Dirección"><input id="eTel" placeholder="Teléfono"><input id="eMail" placeholder="Correo"><input id="eLogoUrl" placeholder="LOGO_URL público"><div class="row"><input id="eRepresentante" placeholder="Representante comercial / legal"><input id="eCargoRep" placeholder="Cargo del representante"></div><input id="eFirmaUrl" placeholder="URL pública de firma del representante"><label>Firma del representante (imagen local opcional)</label><input type="file" id="eFirmaFile" accept="image/*"><div class="row"><select id="eFont"><option>Arial</option><option>Calibri</option><option>Helvetica</option><option>Times New Roman</option></select><input id="eFontSize" type="number" value="12" placeholder="Tamaño letra PDF"></div><label>Logo local para PDF (opcional)</label><input type="file" id="eLogoFile" accept="image/*"><div class="row"><button onclick="saveEmpresa(false)">Guardar empresa</button><button class="teal" onclick="saveEmpresa(true)">Guardar forzado</button><button class="gray" onclick="clearEmpresaForm()">Limpiar</button></div></div><div id="empresasList"></div></section>
+<section id="clientes" class="view"><h2>Clientes</h2><div class="card"><input id="cRazon" placeholder="Razón social / Nombre"><input id="cDoc" placeholder="RUC/DNI"><input id="cDir" placeholder="Dirección"><input id="cTel" placeholder="Teléfono"><input id="cMail" placeholder="Correo"><input id="cResp" placeholder="Responsable"><div class="row"><button onclick="saveCliente()">Guardar cliente</button><button class="gray" onclick="clearClienteForm()">Limpiar</button></div></div><div id="clientesList"></div></section>
+<section id="cotiza" class="view"><h2>Cotizaciones</h2><div class="card"><h3>Nueva cotización</h3><select id="cotCliente"></select><select id="cotTipo"><option>Servicio</option><option>Compra</option><option>Mixta</option></select><div class="row"><input id="cotAtencion" placeholder="Atención: persona solicitante / área"><input id="cotRequerimiento" placeholder="A su requerimiento: oficio, solicitud, correo, SIAF"></div><div class="row"><select id="cotFormaPago"><option>Contado</option><option>Crédito</option><option>Crédito comercial</option><option>Pago contra entrega</option><option>Transferencia</option><option>Otro</option></select><input id="cotPlazo" placeholder="Plazo de entrega / Duración del servicio"></div><div class="row"><input id="cotLugar" placeholder="Lugar de entrega / Lugar de servicio"><input id="cotValidez" placeholder="Validez de la oferta, ej. 30 días hábiles"></div><div class="row"><input id="cotGarantia" placeholder="Garantía"><input id="cotNota" placeholder="Nota / condiciones adicionales"></div><textarea id="cotObs" placeholder="Observaciones"></textarea><h3>Equipos considerados en la cotización</h3><div class="notice">Formato por línea: Equipo | Marca | Modelo | Serie | Código/Patrimonio | Área. Luego cada partida puede aplicarse a uno, varios o todos los equipos.</div><textarea id="cotEquipos" placeholder="Ejemplo:
+Grupo electrógeno | Hyundai | DHY6000LEK | SER-001 | PAT-001 | Almacén
+Tablero ATS | Schneider | ATS-250 | SER-002 | PAT-002 | Sala eléctrica"></textarea><h3>Partidas</h3><div class="row"><select id="pTipo"><option>Servicio</option><option>Repuesto</option><option>Consumible</option><option>Transporte</option><option>Gasto</option><option>Otros</option></select><select id="pUnidad"><option>srv</option><option>und</option><option>gl</option><option>m</option><option>kg</option><option>lt</option><option>hr</option><option>pza</option><option>viaje</option></select></div><input id="pDesc" placeholder="Descripción"><input id="pEquipos" placeholder="Aplicar a equipos: Todos / Equipo 1, Equipo 2"><div class="row"><input id="pCant" type="number" value="1" step="0.01" placeholder="Cantidad"><input id="pPrecio" type="number" value="0" step="0.01" placeholder="Precio unitario"></div><button onclick="addPartida()">+ Agregar partida</button><label class="btn"><input type="file" accept=".csv,.txt" onchange="importCSV(event)" hidden>Importar CSV</label><div id="partidasList"></div><button id="btnGuardarCot" class="green" onclick="guardarCotizacion()">Guardar cotización</button></div><div class="card"><h3>Cotizaciones registradas</h3><div id="cotizacionesList"></div></div></section>
+<section id="ordenes" class="view"><h2>Órdenes</h2><div class="card"><h3>Crear orden directa</h3><select id="ordCliente"></select><select id="ordTipo"><option value="OS">Orden de servicio</option><option value="OC">Orden de compra</option><option value="OM">Orden mixta</option></select><input id="ordTecnico" placeholder="Técnico responsable"><textarea id="ordObs" placeholder="Observaciones / Alcance"></textarea><h4>Partidas de la orden</h4><div class="row"><input id="opDesc" placeholder="Descripción"><input id="opCant" type="number" value="1"><select id="opUnidad"><option>srv</option><option>und</option><option>gl</option><option>m</option><option>kg</option><option>lt</option></select></div><button onclick="addOrdenPartida()">+ Agregar partida orden</button><div id="ordenPartidasTmp"></div><button class="green" onclick="guardarOrdenDirecta()">Guardar orden directa</button></div><div class="card"><h3>Órdenes registradas</h3><div id="ordenesList"></div></div></section>
+<section id="ejecucion" class="view"><h2>Ejecución técnica</h2><div class="card"><select id="execOrden"></select><button onclick="cargarEjecucion()">Cargar orden</button><div id="execPanel"></div><button class="green" onclick="guardarEjecucionActual()">Guardar ejecución</button></div></section>
+<section id="informes" class="view"><h2>Actas e informes</h2><div class="card"><label>Orden</label><select id="docOrden"></select><h3>Equipos atendidos</h3><div class="notice">Registra el equipo principal o varios equipos. Formato por línea: Equipo | Marca | Modelo | Serie | Código/Patrimonio | Área. Las partidas/trabajos se aplican al equipo o equipos atendidos.</div><textarea id="docEquipos" placeholder="Ejemplo:
+Grupo electrógeno | Perkins | 1104A | SER-001 | PAT-001 | Sala de máquinas
+Tablero ATS | Schneider | ATS-250 | SER-002 | PAT-002 | Sala eléctrica"></textarea><div class="row"><input id="eqNombre" placeholder="Equipo principal"><input id="eqMarca" placeholder="Marca"><input id="eqModelo" placeholder="Modelo"><input id="eqSerie" placeholder="Serie"></div><div class="row"><input id="eqCodigo" placeholder="Código patrimonial"><input id="eqArea" placeholder="Área / ubicación"></div><h3>Acta de conformidad profesional</h3><div class="row"><input id="actResponsable" placeholder="Responsable que da conformidad"><input id="actDni" placeholder="DNI"></div><div class="row"><input id="actCargo" placeholder="Cargo / área"><input id="actZona" placeholder="Zona / IPRESS / establecimiento"></div><div class="row"><input id="actOs" placeholder="Orden de servicio N°"><input id="actSiaf" placeholder="SIAF / Expediente"><input id="actFecha" type="date"></div><textarea id="actObs" placeholder="Observaciones del cliente / responsable que da conformidad"></textarea><textarea id="actObsTecnico" placeholder="Observaciones del técnico / personal que ejecuta el servicio"></textarea><div class="row"><div><label>Firma cliente / conformidad</label><canvas id="firmaCliente" class="signature"></canvas><input type="file" accept="image/*" onchange="importFirma('firmaCliente',this)"><button class="gray small" onclick="clearCanvas('firmaCliente')">Limpiar firma</button></div><div><label>Firma técnico / empresa</label><canvas id="firmaTecnico" class="signature"></canvas><input type="file" accept="image/*" onchange="importFirma('firmaTecnico',this)"><button class="gray small" onclick="clearCanvas('firmaTecnico')">Limpiar firma</button></div></div><button onclick="guardarActa()">Guardar acta</button><button class="teal" onclick="pdfActa()">PDF Acta</button><h3>Informe técnico final profesional</h3><div class="notice">En ejecución marca ☑ Incluir en informe para cada partida que debe salir en el reporte final.</div><div class="row"><input id="infEntidad" placeholder="Señores / entidad"><input id="infAtencion" placeholder="Atención"><input id="infAsunto" placeholder="Asunto"></div><textarea id="infAnte" placeholder="Antecedentes: Orden de servicio / SIAF / requerimiento"></textarea><textarea id="infTrabajos" placeholder="Actividades realizadas / resumen técnico"></textarea><textarea id="infReco" placeholder="Recomendaciones técnicas"></textarea><div class="row"><input id="infGarantia" placeholder="Garantía"><input id="infFecha" type="date"></div><button onclick="guardarInforme()">Guardar informe</button><button class="teal" onclick="pdfInforme()">PDF Informe</button></div><div class="card"><h3>Actas guardadas</h3><div id="actasList"></div></div><div class="card"><h3>Informes guardados</h3><div id="informesList"></div></div></section>
+<section id="qrlogistica" class="view"><h2>QR, códigos de barras y repuestos</h2>
+<div class="card"><h3>Escáner rápido</h3><p class="muted">Lee QR o código de barras con cámara. En Android Chrome funciona mejor. Si el navegador no soporta lectura automática, puedes ingresar el código manual.</p><div class="row"><input id="scanManual" placeholder="Código QR / barras / SKU"><button class="teal" onclick="buscarCodigoManual()">Buscar código</button><button onclick="iniciarEscaner()">Leer con cámara</button><button class="gray" onclick="detenerEscaner()">Detener</button></div><video id="scanVideo" playsinline style="display:none;width:100%;max-height:260px;border-radius:16px;background:#000"></video><p id="scanMsg" class="muted">Escáner listo.</p><div id="scanResultado"></div></div>
+<div class="card"><h3>Registrar / editar repuesto</h3><div class="row"><input id="repCodigo" placeholder="Código / SKU / código de barras"><input id="repDesc" placeholder="Descripción del repuesto"></div><div class="row"><input id="repMarca" placeholder="Marca"><input id="repModelo" placeholder="Modelo compatible"><select id="repUnidad"><option>und</option><option>pza</option><option>m</option><option>gl</option><option>lt</option><option>kg</option></select></div><div class="row"><input id="repStock" type="number" step="0.01" placeholder="Stock"><input id="repStockMin" type="number" step="0.01" placeholder="Stock mínimo"><input id="repPrecio" type="number" step="0.01" placeholder="Precio"></div><div class="row"><button class="green" onclick="guardarRepuesto()">Guardar repuesto</button><button onclick="generarQrRepuesto()">Generar QR</button><button class="gray" onclick="limpiarRepuesto()">Limpiar</button></div><div id="qrRepuestoBox"></div></div>
+<div class="card"><h3>Repuestos registrados</h3><div id="repuestosList"></div></div>
+</section>
+<section id="usuarios" class="view"><h2>Usuarios y roles</h2><div class="card"><p class="muted">Registra usuarios para trabajo simultáneo. Cada documento queda marcado con usuario, rol, empresa y sede.</p><div class="row"><input id="uNombre" placeholder="Nombre completo"><input id="uCorreo" placeholder="Correo o usuario"></div><div class="row"><select id="uRol"><option>Superusuario</option><option>Administrador</option><option>Supervisor</option><option>Técnico</option><option>Logística</option><option>Consulta</option></select><select id="uEmpresa"></select><select id="uSede"></select></div><div class="row"><input id="uClave" placeholder="PIN/Clave local opcional"><select id="uEstado"><option>Activo</option><option>Inactivo</option></select></div><button class="green" onclick="guardarUsuario()">Guardar usuario</button><button class="gray" onclick="limpiarUsuarioForm()">Nuevo</button><div class="notice"><b>Roles:</b> Superusuario modifica todo; Técnico ejecuta y sube evidencias; Logística gestiona repuestos; Consulta solo revisa.</div></div><div class="card"><h3>Usuarios registrados</h3><div id="usuariosList"></div></div></section>
+
+<section id="config" class="view"><h2>Configuración y correlativos</h2><div class="card"><h3>Correlativo cotización</h3><p class="muted">Formato empresarial: COT-001-00207. Coloca el último número usado; el siguiente será +1.</p><div class="row"><input id="cfgTipo" value="COT" placeholder="Tipo"><input id="cfgSede" value="001" placeholder="Sede"><input id="cfgLast" type="number" value="207" placeholder="Último usado"><input id="cfgDigits" type="number" value="5" placeholder="Dígitos"></div><p><b>Siguiente:</b> <span id="cfgPreview">COT-001-00208</span></p><button onclick="guardarCorrelativo()">Guardar correlativo</button><button class="gray" onclick="cargarCorrelativoUI()">Recargar correlativo</button></div><div class="card"><h3>Sincronización de campo</h3><p class="muted">Si estás sin señal, los registros quedan locales. Usa este botón cuando vuelva internet.</p><button class="teal" onclick="syncPendientes()">Sincronizar pendientes</button><div id="pendientesList"></div></div></section>
+</div>
+<nav class="tabs noPrint"><button onclick="showView('home',this)" class="active">Inicio</button><button onclick="showView('cotiza',this)">Cotiza</button><button onclick="showView('ordenes',this)">Orden</button><button onclick="showView('ejecucion',this)">Ejecutar</button><button onclick="showView('informes',this)">Informes</button></nav>
+<div id="printArea" class="printDoc" style="display:none"></div>
+<div id="busyOverlay" class="busyOverlay noPrint"><div class="busyBox"><div class="busySpinner"></div><div id="busyText">Procesando...</div><button id="busyRelease" class="gray" style="margin-top:14px;display:none" onclick="forceUnlockUI()">Liberar bloqueo</button></div></div>
+<script>
+const DEFAULT_API='https://script.google.com/macros/s/AKfycbzLSLrjHHWZc1RvjkhCNEduhcgx601PT0ML_BhToS5JJchuin6vCkM0KVznWgjt6CMAtA/exec';
+let db={empresas:[],sedes:[],usuarios:[],clientes:[],cotizaciones:[],cotizacionPartidas:[],ordenes:[],ordenPartidas:[],ejecucionTecnica:[],evidencias:[],actasConformidad:[],informesTecnicos:[],repuestos:[],almacenMovimientos:[],correlativos:[],catalogos:[],meta:{}};
+let empresaActiva=null, editEmpresaId=null, editClienteId=null, editCotId=null, editOrdenId=null, editActaId=null, editInformeId=null, partidas=[], ordenPartidasTmp=[], savingCot=false;
+const $=id=>document.getElementById(id); const uid=p=>p+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
+function n(v){return Number(v||0)} function money(v){return 'S/ '+n(v).toFixed(2)}
+function toggleTopMenu(force){const m=$('topMenu'); if(!m)return; if(force===false)m.classList.remove('show'); else m.classList.toggle('show');}
+function getId(o){return o.ID_EMPRESA||o.ID_CLIENTE||o.ID_COTIZACION||o.ID_ORDEN||o.id||''} function empId(e){return e.ID_EMPRESA||e.empresaId||e.id||''} function cliId(c){return c.ID_CLIENTE||c.clienteId||c.id||''} function cotId(c){return c.ID_COTIZACION||c.id||''} function ordId(o){return o.ID_ORDEN||o.id||''}
+function empName(e){return e.RAZON_SOCIAL||e.razon||e.nombre||''} function cliName(c){return c.RAZON_SOCIAL||c.nombre||''} function cliDoc(c){return c.RUC_DNI||c.doc||''}
+function cleanRuc(v){return String(v||'').replace(/\D/g,'').trim();}
+function empLogo(e){return e.LOGO_BASE64||e.LOGO_URL||e.logoUrl||e.logo||''}
+function uniqBy(arr,fn){const m=new Map();(arr||[]).forEach(x=>{const k=String(fn(x)||'').trim(); if(!k)return; m.set(k,x)});return [...m.values()]}
+function normalizeDB(){
+  db.empresas=uniqBy(db.empresas||[],e=>(empId(e)||e.id||uid('EMP')));
+  db.usuarios=uniqBy(db.usuarios||[],u=>(u.ID_USUARIO||u.id||u.CORREO||u.correo||uid('USR')));
+  db.clientes=uniqBy(db.clientes||[],c=>(c.ID_CLIENTE||c.id||c.RUC_DNI||c.doc||uid('CLI')));
+  db.cotizaciones=uniqBy(db.cotizaciones||[],c=>(c.NUMERO||c.ID_COTIZACION||c.id||uid('COT')));
+  db.cotizacionPartidas=uniqBy(db.cotizacionPartidas||[],p=>(p.ID_PARTIDA||p.id||((p.ID_COTIZACION||'')+'-'+(p.ITEM||''))||uid('CP')));
+  db.ordenes=uniqBy(db.ordenes||[],o=>(o.NUMERO||o.ID_ORDEN||o.id||uid('ORD')));
+  db.ordenPartidas=uniqBy(db.ordenPartidas||[],p=>(p.ID_PARTIDA||p.id||((p.ID_ORDEN||'')+'-'+(p.ITEM||''))||uid('OP')));
+  db.ejecucionTecnica=uniqBy(db.ejecucionTecnica||[],x=>(x.ID_EJECUCION||x.id||x.ID_PARTIDA||uid('EXE')));
+  db.evidencias=uniqBy(db.evidencias||[],x=>(x.ID_EVIDENCIA||x.id||((x.ID_PARTIDA||'')+'-'+(x.FASE||''))||uid('EVI')));
+  db.actasConformidad=uniqBy(db.actasConformidad||[],x=>(x.ID_ACTA||x.id||x.ID_ORDEN||uid('ACT')));
+  db.informesTecnicos=uniqBy(db.informesTecnicos||[],x=>(x.ID_INFORME||x.id||x.ID_ORDEN||uid('INF')));
+  db.repuestos=uniqBy(db.repuestos||[],x=>(x.CODIGO||x.CODIGO_BARRAS||x.ID_REPUESTO||x.id||uid('REP')));
+  db.almacenMovimientos=uniqBy(db.almacenMovimientos||[],x=>(x.ID_MOVIMIENTO||x.id||uid('MOV')));
+  if(!empresaActiva||!db.empresas.some(e=>empId(e)===empresaActiva)) empresaActiva=empId(db.empresas[0]||{})||null;
+}
+const STORE_MODULES=['empresas','sedes','usuarios','clientes','cotizaciones','cotizacionPartidas','ordenes','ordenPartidas','ejecucionTecnica','evidencias','actasConformidad','informesTecnicos','repuestos','almacenMovimientos','correlativos','catalogos'];
+function slimEvidence(ev){const x={...ev}; if(x.DATA_URL&&String(x.DATA_URL).length>600){x.DATA_URL='';x.DATA_LOCAL='OPTIMIZADA_NO_LOCALSTORAGE';} return x;}
+function slimModule(k,v){if(k==='evidencias')return (v||[]).map(slimEvidence); return v||[];}
+function storage(){
+  try{
+    STORE_MODULES.forEach(k=>localStorage.setItem('servitec_f1_'+k,JSON.stringify(slimModule(k,db[k]))));
+    localStorage.setItem('servitec_f1_meta',JSON.stringify(db.meta||{}));
+    localStorage.setItem('servitec_f1_emp',empresaActiva||'');
+    try{localStorage.removeItem('servitec_f1_db')}catch(e){}
+  }catch(e){
+    console.warn('Storage modular lleno, aplicando modo liviano',e);
+    try{localStorage.removeItem('servitec_f1_db');localStorage.removeItem('servitec_cache_google')}catch(_e){}
+    const safe={...db,evidencias:(db.evidencias||[]).map(slimEvidence)};
+    try{localStorage.setItem('servitec_f1_emergency',JSON.stringify({empresas:safe.empresas,clientes:safe.clientes,cotizaciones:safe.cotizaciones,ordenes:safe.ordenes,meta:safe.meta}));localStorage.setItem('servitec_f1_emp',empresaActiva||'');}
+    catch(err){alert('Memoria local llena. Use Sincronizar pendientes y luego Limpieza local.');}
+  }
+}
+function load(){
+  let legacy=null;
+  try{legacy=JSON.parse(localStorage.getItem('servitec_f1_db')||'null')}catch(e){}
+  if(legacy){db={...db,...legacy};}
+  STORE_MODULES.forEach(k=>{try{const v=JSON.parse(localStorage.getItem('servitec_f1_'+k)||'null'); if(Array.isArray(v))db[k]=v}catch(e){}});
+  try{const m=JSON.parse(localStorage.getItem('servitec_f1_meta')||'null'); if(m)db.meta=m}catch(e){}
+  if(!db.empresas.length){try{const em=JSON.parse(localStorage.getItem('servitec_f1_emergency')||'null'); if(em)db={...db,...em}}catch(e){}}
+  empresaActiva=localStorage.getItem('servitec_f1_emp')||localStorage.getItem('servitec_empresa_activa')||db.meta?.empresaActiva||empId(db.empresas[0]||{})||null;
+  $('apiUrl').value=localStorage.getItem('servitec_api')||DEFAULT_API;
+  normalizeDB();storage();renderAll();setupSignatures();['cfgTipo','cfgSede','cfgLast','cfgDigits'].forEach(id=>setTimeout(()=>{const el=$(id); if(el)el.oninput=()=>cargarCorrelativoUI(false)},0));
+}
+function limpiarStoragePesado(){try{localStorage.removeItem('servitec_f1_db');localStorage.removeItem('servitec_cache_google');storage();alert('Storage pesado limpiado. La app queda en modo modular.')}catch(e){alert('No se pudo limpiar: '+e.message)}}
+function showView(v,btn){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));$(v).classList.add('active');document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active')); if(btn)btn.classList.add('active'); renderAll();}
+function msg(t){const el=$('syncMsg'); if(el) el.textContent=t}
+function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
+function disableSyncButtons(v){document.querySelectorAll('#sync button').forEach(b=>{b.disabled=!!v})}
+function saveApiUrl(){localStorage.setItem('servitec_api',$('apiUrl').value.trim()||DEFAULT_API);alert('URL guardada')}
+function isIosSafari(){return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1)}
+function nowMs(){return Date.now()}
+function cacheAgeText(at){try{const d=new Date(at); const mins=Math.round((Date.now()-d.getTime())/60000); if(mins<1)return 'hace segundos'; if(mins<60)return 'hace '+mins+' min'; return 'hace '+Math.round(mins/60)+' h'}catch(e){return ''}}
+async function api(action,data={},extra={}){
+  const url=(localStorage.getItem('servitec_api')||$('apiUrl')?.value||DEFAULT_API).trim();
+  const ctrl=new AbortController(); const t=setTimeout(()=>ctrl.abort(),18000);
+  try{
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,data,...extra}),signal:ctrl.signal,cache:'no-store'});
+    const txt=await r.text();
+    try{return JSON.parse(txt)}catch(e){throw new Error((txt||'Respuesta inválida de Apps Script').slice(0,180))}
+  }finally{clearTimeout(t)}
+}
+function guardarCacheGoogle(data){try{localStorage.setItem('servitec_cache_google',JSON.stringify({at:new Date().toISOString(),data}))}catch(e){console.warn('cache lleno',e)}}
+function leerCacheGoogle(){try{return JSON.parse(localStorage.getItem('servitec_cache_google')||'null')}catch(e){return null}}
+function aplicarCache(c){if(!c||!c.data)return false; db={...db,...c.data}; normalizeDB(); storage(); renderAll(); return true}
+function usarCacheLocal(){const c=leerCacheGoogle(); if(c&&aplicarCache(c)){msg('Usando respaldo local '+cacheAgeText(c.at)+'. Puedes seguir trabajando.');return} normalizeDB();storage();renderAll(); msg('Usando datos locales del dispositivo.'); alert('No hay cache descargado, pero se mantienen los datos locales del dispositivo.');}
+function limpiarBloqueoSync(){localStorage.removeItem('servitec_last_pull_ms'); localStorage.removeItem('servitec_pull_lock_until'); alert('Bloqueo de descarga liberado. Usa Descargar una sola vez.');}
+async function pullGoogle(force=false){
+  const c=leerCacheGoogle();
+  const last=Number(localStorage.getItem('servitec_last_pull_ms')||0);
+  const lockUntil=Number(localStorage.getItem('servitec_pull_lock_until')||0);
+  const now=Date.now();
+
+  // En iPhone y campo: cache primero para evitar cuota y lentitud.
+  if(!force && c && c.data && now-last < 6*60*60*1000){
+    aplicarCache(c); msg('Modo campo: se usó cache local '+cacheAgeText(c.at)+'. Para forzar Google, libera bloqueo y vuelve a descargar.'); return;
+  }
+  if(!force && lockUntil && now < lockUntil){
+    if(c && aplicarCache(c)){msg('Google está en enfriamiento por cuota. Usando cache local '+cacheAgeText(c.at)+'.'); return}
+    msg('Google está en enfriamiento por cuota. Trabaja local y sincroniza luego.'); return;
+  }
+  if(!force && last && now-last<5*60*1000){
+    if(c && aplicarCache(c)){msg('Descarga reciente evitada. Cache local '+cacheAgeText(c.at)+'.');return}
+  }
+
+  try{
+    disableSyncButtons(true); msg('Descargando datos de Google...');
+    const res=await api('pull');
+    if(!res.ok)throw new Error(res.error||'Error API');
+    db={...db,...res.data}; normalizeDB(); storage(); guardarCacheGoogle(res.data);
+    localStorage.setItem('servitec_last_pull_ms',String(Date.now()));
+    localStorage.setItem('servitec_last_sync',new Date().toLocaleString());
+    localStorage.removeItem('servitec_pull_lock_until');
+    renderAll(); msg('Datos descargados correctamente');
+  }catch(e){
+    const em=String(e.message||e);
+    if(/quota|exceeded|limit|too many/i.test(em)){
+      localStorage.setItem('servitec_pull_lock_until',String(Date.now()+30*60*1000));
+      if(c&&aplicarCache(c)){msg('Google llegó a cuota. Se usó respaldo local '+cacheAgeText(c.at)+'. Reintenta en 30 minutos.');return}
+      msg('Google llegó a cuota. Trabaja con datos locales y sincroniza pendientes más tarde.'); return;
+    }
+    if(/abort|network|failed|load/i.test(em)){
+      if(c&&aplicarCache(c)){msg('Sin conexión estable. Se usó cache local '+cacheAgeText(c.at)+'.');return}
+      msg('Sin conexión estable. Trabaja local y sincroniza después.'); return;
+    }
+    alert('No se pudo descargar: '+em); msg('Error descarga: '+em);
+  }finally{disableSyncButtons(false)}
+}
+async function upsert(table,record){return await api('upsert',{}, {table,record});}
+function markAuditLocal(tipo, id, accion, motivo=''){return {tipo,id,accion,motivo,at:new Date().toISOString(),user:usuarioActual().nombre} }
+async function superUpsert(table,record){record.ACTUALIZADO_POR=usuarioActual().nombre;record.ACTUALIZADO_ROL=usuarioActual().rol;record.ACTUALIZADO_EN=new Date().toISOString();try{return await upsert(table,record)}catch(e){queuePending(table,record);return {ok:false,error:e.message}}}
+function getPendientes(){try{return JSON.parse(localStorage.getItem('servitec_f1_pending')||'[]')}catch(e){return []}}
+function setPendientes(a){localStorage.setItem('servitec_f1_pending',JSON.stringify(a||[]));renderPendientes(); renderMetrics();}
+function pendingKey(table,record){return table+'::'+(record.ID_COTIZACION||record.ID_ORDEN||record.ID_PARTIDA||record.ID_EJECUCION||record.ID_EVIDENCIA||record.ID_ACTA||record.ID_INFORME||record.ID_REPUESTO||record.ID_USUARIO||record.ID_EMPRESA||record.id||'')}
+function queuePending(table,record){const p=getPendientes(); const k=pendingKey(table,record); const ix=p.findIndex(x=>x.key===k); const item={key:k,table,record,at:new Date().toISOString()}; if(ix>=0)p[ix]=item; else p.push(item); setPendientes(p);}
+async function syncPendientes(){
+  let p=getPendientes(); if(!p.length){alert('No hay pendientes por sincronizar.');return}
+  disableSyncButtons(true); let ok=0,fail=[]; msg('Sincronizando '+p.length+' pendientes por lotes...');
+  for(let i=0;i<p.length;i++){
+    const x=p[i];
+    try{
+      const r=await upsert(x.table,x.record);
+      if(r&&r.ok) ok++; else fail.push(x);
+    }catch(e){fail.push(x)}
+    if(i%3===2){msg('Sincronizando... '+(i+1)+'/'+p.length); await sleep(450)}
+  }
+  setPendientes(fail); disableSyncButtons(false);
+  msg('Sincronización finalizada. OK: '+ok+' / pendientes: '+fail.length);
+  if(!fail.length) localStorage.setItem('servitec_last_sync',new Date().toLocaleString());
+  renderAll();
+}
+function renderPendientes(){const el=$('pendientesList'); if(!el)return; const p=getPendientes(); el.innerHTML=p.length? p.map((x,i)=>`<div class="listItem"><b>${x.table}</b><br><span class="muted">${x.at}</span></div>`).join(''):'<p class="muted">Sin pendientes locales.</p>';}
+
+
+let editUsuarioId=null;
+function userId(u){return u.ID_USUARIO||u.id||''}
+function userName(u){return u.NOMBRE||u.nombre||''}
+function userRol(u){return u.ROL||u.rol||'Técnico'}
+function renderUsuarios(){
+  const empSel=$('uEmpresa'); if(empSel) empSel.innerHTML=(db.empresas||[]).map(e=>`<option value="${e.ID_EMPRESA||empId(e)}">${empName(e)}</option>`).join('')||'<option value="">Sin empresa</option>';
+  const sedeSel=$('uSede'); if(sedeSel) sedeSel.innerHTML=(db.sedes||[]).map(s=>`<option value="${s.ID_SEDE||s.id||''}">${s.NOMBRE_SEDE||s.nombre||s.CODIGO_SEDE||'Sede'}</option>`).join('')||'<option value="SED001">Sede principal</option>';
+  const el=$('usuariosList'); if(!el) return;
+  el.innerHTML=(db.usuarios||[]).filter(u=>u.ESTADO!=='Eliminado').map(u=>`<div class="listItem"><div class="listHead"><b>${userName(u)||'Sin nombre'}</b><span>${userRol(u)} · ${u.ESTADO||'Activo'}</span></div><p>${u.CORREO||u.correo||''}<br><span class="muted">Empresa: ${u.ID_EMPRESA||''} · Sede: ${u.ID_SEDE||''}</span></p><button class="gray" onclick="editarUsuario('${userId(u)}')">Editar</button><button class="teal" onclick="activarUsuarioLocal('${userId(u)}')">Usar sesión</button><button class="red" onclick="eliminarUsuario('${userId(u)}')">Eliminar</button></div>`).join('')||'<p class="muted">Sin usuarios registrados.</p>';
+}
+function limpiarUsuarioForm(){editUsuarioId=null; ['uNombre','uCorreo','uClave'].forEach(id=>{const el=$(id); if(el)el.value=''}); const st=$('uEstado'); if(st)st.value='Activo';}
+async function guardarUsuario(){
+  const nombre=($('uNombre')?.value||'').trim(), correo=($('uCorreo')?.value||'').trim();
+  if(!nombre) return alert('Ingresa el nombre del usuario.');
+  if(!correo) return alert('Ingresa correo o usuario.');
+  const dup=(db.usuarios||[]).find(u=>(u.CORREO||u.correo||'').toLowerCase()===correo.toLowerCase() && userId(u)!==editUsuarioId && u.ESTADO!=='Eliminado');
+  if(dup) return alert('Ya existe un usuario con ese correo/usuario.');
+  const id=editUsuarioId||uid('USR');
+  const old=(db.usuarios||[]).find(u=>userId(u)===id)||{};
+  const rec={...old,id,ID_USUARIO:id,NOMBRE:nombre,CORREO:correo,ROL:$('uRol')?.value||'Técnico',ID_EMPRESA:$('uEmpresa')?.value||empresaActiva||'',ID_SEDE:$('uSede')?.value||'SED001',CLAVE_LOCAL:$('uClave')?.value||old.CLAVE_LOCAL||'',ESTADO:$('uEstado')?.value||'Activo',ACTUALIZADO_EN:new Date().toISOString(),ACTUALIZADO_POR:usuarioActual().nombre};
+  const ix=db.usuarios.findIndex(u=>userId(u)===id); if(ix>=0) db.usuarios[ix]=rec; else db.usuarios.push(rec);
+  storage(); renderAll(); limpiarUsuarioForm();
+  try{await superUpsert('USUARIOS',rec); alert('Usuario guardado y sincronizado.')}catch(e){queuePending('USUARIOS',rec); alert('Usuario guardado local. Pendiente de sincronizar.');}
+}
+function editarUsuario(id){const u=(db.usuarios||[]).find(x=>userId(x)===id); if(!u)return; editUsuarioId=id; $('uNombre').value=userName(u); $('uCorreo').value=u.CORREO||u.correo||''; $('uRol').value=userRol(u); if($('uEmpresa'))$('uEmpresa').value=u.ID_EMPRESA||''; if($('uSede'))$('uSede').value=u.ID_SEDE||''; $('uClave').value=u.CLAVE_LOCAL||''; $('uEstado').value=u.ESTADO||'Activo'; showView('usuarios');}
+async function eliminarUsuario(id){const u=(db.usuarios||[]).find(x=>userId(x)===id); if(!u)return; if(!confirm('¿Eliminar/desactivar este usuario?'))return; u.ESTADO='Eliminado'; u._deleted=true; u.ACTUALIZADO_EN=new Date().toISOString(); storage(); renderAll(); try{await superUpsert('USUARIOS',u)}catch(e){queuePending('USUARIOS',u)}}
+function activarUsuarioLocal(id){const u=(db.usuarios||[]).find(x=>userId(x)===id); if(!u)return; localStorage.setItem('servitec_usuario_id',userId(u)); localStorage.setItem('servitec_usuario_nombre',userName(u)); localStorage.setItem('servitec_usuario_rol',userRol(u)); alert('Sesión local activa: '+userName(u)+' ('+userRol(u)+')');}
+function usuarioActual(){return {id:localStorage.getItem('servitec_usuario_id')||'USR_LOCAL',nombre:localStorage.getItem('servitec_usuario_nombre')||'SUPERUSUARIO',rol:localStorage.getItem('servitec_usuario_rol')||'Superusuario'};}
+
+async function nextNumber(tipo='COT'){
+  const emp=currentEmpresa();
+  const sede=(db.sedes||[]).find(s=>(s.ID_EMPRESA||s.empresaId)===empId(emp));
+  const sedeCod=sede?.CODIGO_SEDE||'001';
+  const payload={empresaId:emp.ID_EMPRESA||empId(emp)||'EMP001',tipo,sede:sedeCod,digits:5};
+  try{const res=await api('nextNumber',{}, {payload}); if(res.ok)return res.numero; throw new Error(res.error||'No se generó correlativo');}
+  catch(e){
+    const corr=(db.correlativos||[]).find(r=>(r.tipo||r.TIPO)===tipo && (r.sede||r.SEDE||r.CODIGO_SEDE||'001')===sedeCod) || {last:0,digits:5};
+    corr.last=Number(corr.last||corr.LAST||0)+1; corr.tipo=tipo; corr.sede=sedeCod; corr.digits=Number(corr.digits||5);
+    if(!corr.id)corr.id='CORR-'+(emp.ID_EMPRESA||'EMP')+'-'+tipo+'-'+sedeCod;
+    if(!db.correlativos.some(r=>r.id===corr.id))db.correlativos.push(corr);
+    storage(); queuePending('CORRELATIVOS',corr);
+    return tipo+'-'+sedeCod+'-'+String(corr.last).padStart(corr.digits,'0');
+  }
+}function currentEmpresa(){return db.empresas.find(e=>empId(e)===empresaActiva)||db.empresas[0]||{} } function activeClientes(){const eid=(currentEmpresa().ID_EMPRESA||empId(currentEmpresa())); return db.clientes.filter(c=>(c.ID_EMPRESA||c.empresaId||empresaActiva)===eid || (c.empresaId===empresaActiva));}
+function limpiarFormulariosDocumento(){
+  editActaId=null; editInformeId=null;
+  ['docEquipos','eqNombre','eqMarca','eqModelo','eqSerie','eqCodigo','eqArea','actResponsable','actDni','actCargo','actZona','actOs','actSiaf','actObs','actObsTecnico','infEntidad','infAtencion','infAsunto','infAnte','infTrabajos','infReco','infGarantia'].forEach(id=>{const el=$(id); if(el) el.value='';});
+  ['actFecha','infFecha'].forEach(id=>{const el=$(id); if(el) el.value='';});
+  try{clearCanvas('firmaCliente');clearCanvas('firmaTecnico');}catch(e){}
+}
+function setEmpresaActiva(){
+  const nueva=$('empresaActiva').value;
+  if(nueva!==empresaActiva){ limpiarFormulariosDocumento(); }
+  empresaActiva=nueva;
+  localStorage.setItem('servitec_empresa_activa',empresaActiva||'');
+  storage();renderAll();
+}
+function renderAll(){normalizeDB();renderHeader();renderMetrics();renderEmpresas();renderClientes();renderSelects();renderPartidas();renderCotizaciones();renderOrdenes();renderExecSelects();renderDocsLists();renderRepuestos();renderUsuarios();renderPendientes();cargarCorrelativoUI(false);}
+function renderHeader(){const e=currentEmpresa();$('empresaInfo').textContent=e?empName(e)||'Sin empresa activa':'Sin empresa activa'; const logo=empLogo(e); $('logoBox').innerHTML=logo?`<img src="${logo}" onerror="this.parentElement.textContent='SP'">`:'SP'; $('netState').textContent=navigator.onLine?'En línea':'Offline';}
+function renderMetrics(){$('mEmp').textContent=db.empresas.length;$('mCli').textContent=activeClientes().length;const eid=(currentEmpresa().ID_EMPRESA||empId(currentEmpresa())); const cots=(db.cotizaciones||[]).filter(c=>(c.ID_EMPRESA||c.empresaId)===eid&&c.ESTADO!=='Eliminado'); const ords=(db.ordenes||[]).filter(o=>(o.ID_EMPRESA||o.empresaId||eid)===eid&&o.ESTADO!=='Eliminado'); $('mCot').textContent=cots.length;$('mOrd').textContent=ords.length; if($('mEjec'))$('mEjec').textContent=(db.ejecucionTecnica||[]).length; if($('mActas'))$('mActas').textContent=(db.actasConformidad||[]).length; if($('mInf'))$('mInf').textContent=(db.informesTecnicos||[]).length; if($('mPend'))$('mPend').textContent=getPendientes().length; if($('dashEmpresa'))$('dashEmpresa').textContent=empName(currentEmpresa())||'Sin empresa'; if($('dashSync'))$('dashSync').textContent=localStorage.getItem('servitec_last_sync')||'Pendiente';}
+function renderSelects(){const empSel=$('empresaActiva'); empSel.innerHTML=db.empresas.map(e=>`<option value="${empId(e)}" ${empId(e)===empresaActiva?'selected':''}>${empName(e)}</option>`).join(''); const cliOpts=activeClientes().map(c=>`<option value="${cliId(c)}">${cliName(c)} - ${cliDoc(c)}</option>`).join(''); ['cotCliente','ordCliente'].forEach(id=>$(id).innerHTML=cliOpts||'<option value="">Sin clientes</option>');}
+function renderEmpresas(){$('empresasList').innerHTML=(db.empresas||[]).map(e=>`<div class="listItem"><div class="listHead"><b>${empName(e)}</b><span>${e.RUC||e.ruc||''}</span></div><p>${e.DIRECCION||e.dir||''}</p><button onclick="activarEmpresaSegura('${empId(e)}')">Activar</button><button class="gray" onclick="editEmpresa('${empId(e)}')">Editar</button><button class="red" onclick="deleteEmpresa('${empId(e)}')">Eliminar local</button></div>`).join('')||'<p class="muted">Sin empresas</p>'}
+function clearEmpresaForm(){editEmpresaId=null;['eRazon','eRuc','eDir','eTel','eMail','eLogoUrl','eRepresentante','eCargoRep','eFirmaUrl'].forEach(id=>$(id).value=''); if($('eFont'))$('eFont').value='Arial'; if($('eFontSize'))$('eFontSize').value='12'; $('eLogoFile').value=''}
+function editEmpresa(id){const e=db.empresas.find(x=>empId(x)===id); if(!e)return; editEmpresaId=id;$('eRazon').value=empName(e);$('eRuc').value=e.RUC||e.ruc||'';$('eDir').value=e.DIRECCION||'';$('eTel').value=e.TELEFONO||'';$('eMail').value=e.CORREO||'';$('eLogoUrl').value=e.LOGO_URL||''; if($('eRepresentante'))$('eRepresentante').value=e.REPRESENTANTE||''; if($('eCargoRep'))$('eCargoRep').value=e.CARGO_REPRESENTANTE||''; if($('eFirmaUrl'))$('eFirmaUrl').value=e.FIRMA_URL||''; if($('eFont'))$('eFont').value=e.FONT||'Arial'; if($('eFontSize'))$('eFontSize').value=e.FONT_SIZE||12;scrollTo(0,0)}
+function fileToBase64(file){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(file)})}
+function compressImageFile(file,maxSide=1280,quality=0.72){
+  return new Promise((resolve,reject)=>{
+    if(!file || !String(file.type||'').startsWith('image/')) return resolve(null);
+    const reader=new FileReader();
+    reader.onerror=reject;
+    reader.onload=()=>{
+      const img=new Image();
+      img.onerror=()=>resolve(reader.result);
+      img.onload=()=>{
+        let w=img.width,h=img.height;
+        const scale=Math.min(1,maxSide/Math.max(w,h));
+        w=Math.round(w*scale); h=Math.round(h*scale);
+        const canvas=document.createElement('canvas'); canvas.width=w; canvas.height=h;
+        const ctx=canvas.getContext('2d'); ctx.drawImage(img,0,0,w,h);
+        try{ resolve(canvas.toDataURL('image/jpeg',quality)); }catch(e){ resolve(reader.result); }
+      };
+      img.src=reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+async function saveEmpresa(forceSave=false){
+  const rucRaw=$('eRuc').value.trim();
+  const ruc=cleanRuc(rucRaw);
+  const razon=$('eRazon').value.trim();
+  if(!razon)return alert('Ingrese razón social');
+  if(!ruc)return alert('Ingrese RUC');
+  const dup=(db.empresas||[]).find(e=>cleanRuc(e.RUC||e.ruc)===ruc && (!editEmpresaId || empId(e)!==editEmpresaId));
+  if(dup && !forceSave){
+    return alert('Ya existe empresa con ese RUC: '+ruc+'. Usa Editar si deseas modificarla. Si estás seguro que es otra empresa, usa Guardar forzado.');
+  }
+  const old=editEmpresaId?db.empresas.find(e=>empId(e)===editEmpresaId):null;
+  let logoB='';
+  let firmaB='';
+  try{
+    if($('eLogoFile')&&$('eLogoFile').files[0]) logoB=await compressImageFile($('eLogoFile').files[0],700,0.70);
+    if($('eFirmaFile')&&$('eFirmaFile').files[0]) firmaB=await compressImageFile($('eFirmaFile').files[0],700,0.70);
+  }catch(err){console.warn('No se pudo comprimir imagen empresa',err)}
+  const newId=old?(old.ID_EMPRESA||empId(old)):'EMP'+String((db.empresas||[]).length+1).padStart(3,'0');
+  const rec={
+    id:old?(old.id||newId):uid('EMP'),
+    ID_EMPRESA:newId,
+    RAZON_SOCIAL:razon,
+    RUC:ruc,
+    DIRECCION:$('eDir').value.trim(),
+    TELEFONO:$('eTel').value.trim(),
+    CORREO:$('eMail').value.trim(),
+    LOGO_URL:$('eLogoUrl').value.trim(),
+    LOGO_BASE64:logoB||(old&&old.LOGO_BASE64)||'',
+    REPRESENTANTE:$('eRepresentante')?$('eRepresentante').value.trim():'',
+    CARGO_REPRESENTANTE:$('eCargoRep')?$('eCargoRep').value.trim():'',
+    FIRMA_URL:$('eFirmaUrl')?$('eFirmaUrl').value.trim():'',
+    FIRMA_BASE64:firmaB||(old&&old.FIRMA_BASE64)||'',
+    FONT:$('eFont')?$('eFont').value:'Arial',
+    FONT_SIZE:$('eFontSize')?Number($('eFontSize').value||12):12,
+    ESTADO:'Activo',
+    ACTUALIZADO_EN:new Date().toISOString(),
+    ACTUALIZADO_POR:usuarioActual().nombre||'Campo'
+  };
+  const i=db.empresas.findIndex(e=>(editEmpresaId && empId(e)===editEmpresaId));
+  if(i>=0)db.empresas[i]=rec; else db.empresas.push(rec);
+  empresaActiva=empId(rec);
+  storage();renderAll();clearEmpresaForm();
+  try{
+    const r=await upsert('EMPRESAS',rec);
+    if(r&&r.ok) alert('Empresa guardada y sincronizada correctamente.');
+    else {queuePending('EMPRESAS',rec); alert('Empresa guardada localmente. Quedó pendiente de sincronización.');}
+  }catch(e){
+    queuePending('EMPRESAS',rec);
+    alert('Empresa guardada localmente. Google no respondió: '+(e.message||e));
+  }
+}
+function deleteEmpresa(id){if(!confirm('Eliminar empresa local?'))return; db.empresas=db.empresas.filter(e=>empId(e)!==id); if(empresaActiva===id)empresaActiva=empId(db.empresas[0]||{}); storage();renderAll();}
+function renderClientes(){const arr=activeClientes(); $('clientesList').innerHTML=arr.map(c=>`<div class="listItem"><div class="listHead"><b>${cliName(c)}</b><span>${cliDoc(c)}</span></div><p>${c.DIRECCION||''}</p><button class="gray" onclick="editCliente('${cliId(c)}')">Editar</button><button class="red" onclick="deleteCliente('${cliId(c)}')">Eliminar local</button></div>`).join('')||'<p class="muted">Sin clientes para esta empresa</p>'}
+function clearClienteForm(){editClienteId=null;['cRazon','cDoc','cDir','cTel','cMail','cResp'].forEach(id=>$(id).value='')}
+function editCliente(id){const c=db.clientes.find(x=>cliId(x)===id); if(!c)return; editClienteId=id;$('cRazon').value=cliName(c);$('cDoc').value=cliDoc(c);$('cDir').value=c.DIRECCION||'';$('cTel').value=c.TELEFONO||'';$('cMail').value=c.CORREO||'';$('cResp').value=c.RESPONSABLE||'';}
+async function saveCliente(){const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa()); const rec={id:editClienteId||uid('CLI'),ID_CLIENTE:editClienteId? (db.clientes.find(c=>cliId(c)===editClienteId)?.ID_CLIENTE||editClienteId):'CLI'+String(db.clientes.length+1).padStart(3,'0'),ID_EMPRESA:eid,RAZON_SOCIAL:$('cRazon').value.trim(),RUC_DNI:$('cDoc').value.trim(),DIRECCION:$('cDir').value.trim(),TELEFONO:$('cTel').value.trim(),CORREO:$('cMail').value.trim(),RESPONSABLE:$('cResp').value.trim(),ESTADO:'Activo'}; const i=db.clientes.findIndex(c=>cliId(c)===editClienteId); if(i>=0)db.clientes[i]=rec; else db.clientes.push(rec); storage();renderAll();clearClienteForm();try{await upsert('CLIENTES',rec)}catch(e){alert('Guardado local, fallo Google: '+e.message)}}
+function deleteCliente(id){db.clientes=db.clientes.filter(c=>cliId(c)!==id);storage();renderAll()}
+function addPartida(){const d=$('pDesc').value.trim(); if(!d)return alert('Ingrese descripción'); partidas.push({item:partidas.length+1,tipo:$('pTipo').value,descripcion:d,equipos:$('pEquipos')?.value||'Todos',cantidad:n($('pCant').value),unidad:$('pUnidad').value,precio:n($('pPrecio').value)}); ['pDesc','pEquipos'].forEach(id=>$(id).value='');$('pCant').value=1;$('pPrecio').value=0;renderPartidas();}
+function renderPartidas(){$('partidasList').innerHTML=partidas.map((p,i)=>`<div class="partCard"><b>Item ${i+1}</b><div class="row"><select onchange="partidas[${i}].tipo=this.value;renderPartidas()"><option ${p.tipo==='Servicio'?'selected':''}>Servicio</option><option ${p.tipo==='Repuesto'?'selected':''}>Repuesto</option><option ${p.tipo==='Consumible'?'selected':''}>Consumible</option><option ${p.tipo==='Transporte'?'selected':''}>Transporte</option><option ${p.tipo==='Gasto'?'selected':''}>Gasto</option><option ${p.tipo==='Otros'?'selected':''}>Otros</option></select><select onchange="partidas[${i}].unidad=this.value;renderPartidas()">${['srv','und','gl','m','kg','lt','hr','pza','viaje'].map(u=>`<option ${p.unidad===u?'selected':''}>${u}</option>`).join('')}</select></div><input value="${p.descripcion||''}" onchange="partidas[${i}].descripcion=this.value"><input value="${p.equipos||'Todos'}" placeholder="Equipos aplicables" onchange="partidas[${i}].equipos=this.value"><div class="row"><input type="number" step="0.01" value="${p.cantidad}" onchange="partidas[${i}].cantidad=Number(this.value);renderPartidas()"><input type="number" step="0.01" value="${p.precio}" onchange="partidas[${i}].precio=Number(this.value);renderPartidas()"></div><b>Subtotal: ${money(p.cantidad*p.precio)}</b><button class="red small" onclick="partidas.splice(${i},1);renderPartidas()">Quitar</button></div>`).join('')}
+function normTipo(v){v=String(v||'').trim().toLowerCase(); if(['servicio','srv','mantenimiento','trabajo'].includes(v))return 'Servicio'; if(['repuesto','rep'].includes(v))return 'Repuesto'; if(['consumible','insumo'].includes(v))return 'Consumible'; if(['transporte','gasto','otros'].includes(v))return v.charAt(0).toUpperCase()+v.slice(1); return 'Servicio'}
+function normUnidad(v,tipo){v=String(v||'').trim().toLowerCase(); const ok=['srv','und','gl','m','kg','lt','hr','pza','viaje']; if(ok.includes(v))return v; return tipo==='Servicio'?'srv':'und'}
+function parseNum(v){return n(String(v||'0').replace('S/','').replace(',','.').replace(/[^0-9.\-]/g,''))||0}
+function importCSV(ev){
+  const file=ev.target.files[0]; if(!file)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    const lines=String(r.result).split(/\r?\n/).filter(x=>x.trim());
+    lines.forEach((line,idx)=>{
+      let cols=line.includes(';')?line.split(';'):line.split(',');
+      cols=cols.map(x=>String(x||'').trim());
+      if(idx===0 && /item|descripcion|descripción|cantidad|precio|unidad|tipo/i.test(line))return;
+      let tipo='Servicio',desc='',cant='1',unidad='',precio='0',equipos='Todos';
+      if(cols.length>=7){[,tipo,desc,cant,unidad,precio,equipos]=cols;}
+      else if(cols.length>=6){[,tipo,desc,cant,unidad,precio]=cols;}
+      else if(cols.length===5){[tipo,desc,cant,unidad,precio]=cols;}
+      else if(cols.length===4){[desc,cant,unidad,precio]=cols;}
+      else if(cols.length===3){[desc,cant,precio]=cols; unidad='srv';}
+      else {desc=cols.join(' ').trim();}
+      tipo=normTipo(tipo); unidad=normUnidad(unidad,tipo);
+      if(!desc)desc='Sin descripción';
+      partidas.push({item:partidas.length+1,tipo,descripcion:desc,equipos:equipos||'Todos',cantidad:parseNum(cant)||1,unidad,precio:parseNum(precio)});
+    });
+    renderPartidas(); ev.target.value='';
+  };
+  r.readAsText(file);
+}
+async function guardarCotizacion(){
+  if(savingCot)return;
+  savingCot=true;
+  const btn=$('btnGuardarCot');
+  btn.disabled=true; const oldText=btn.textContent; btn.textContent=editCotId?'Actualizando...':'Guardando...';
+  try{
+    if(!empresaActiva)return alert('Seleccione empresa');
+    if(!$('cotCliente').value)return alert('Seleccione cliente');
+    if(!partidas.length)return alert('Agregue partidas');
+    const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa());
+    const cid=$('cotCliente').value;
+    const sub=partidas.reduce((a,p)=>a+n(p.cantidad)*n(p.precio),0);
+    const igv=+(sub*.18).toFixed(2),tot=+(sub+igv).toFixed(2);
+    let id=editCotId || uid('COT');
+    let existente=db.cotizaciones.find(x=>cotId(x)===id);
+    let numero=existente?existente.NUMERO:await nextNumber('COT');
+    if(!existente && db.cotizaciones.some(c=>String(c.NUMERO)===String(numero))){throw new Error('El correlativo ya existe localmente: '+numero)}
+    const cot={...(existente||{}),id,ID_COTIZACION:id,ID_EMPRESA:eid,ID_CLIENTE:cid,NUMERO:numero,TIPO:$('cotTipo').value,ATENCION:$('cotAtencion')?.value||'',REQUERIMIENTO:$('cotRequerimiento')?.value||'',FORMA_PAGO:$('cotFormaPago')?.value||'',PLAZO:$('cotPlazo')?.value||'',LUGAR:$('cotLugar')?.value||'',VALIDEZ:$('cotValidez')?.value||'',GARANTIA:$('cotGarantia')?.value||'',NOTA:$('cotNota')?.value||'',OBSERVACIONES:$('cotObs').value,EQUIPOS_COTIZADOS:($('cotEquipos')?.value||''),FECHA:existente?.FECHA||new Date().toISOString(),SUBTOTAL:sub,IGV:igv,TOTAL:tot,ESTADO:existente?.ESTADO||'Emitido',ACTUALIZADO_EN:new Date().toISOString(),ACTUALIZADO_POR:'SUPERUSUARIO'};
+    db.cotizacionPartidas=(db.cotizacionPartidas||[]).filter(p=>(p.ID_COTIZACION||p.cotizacionId)!==id);
+    const ps=partidas.map((p,i)=>{const pid=uid('CP');return {id:pid,ID_PARTIDA:pid,ID_COTIZACION:id,ID_EMPRESA:eid,ITEM:i+1,TIPO:p.tipo,DESCRIPCION:p.descripcion,CANTIDAD:n(p.cantidad),UNIDAD:p.unidad,PRECIO_UNITARIO:n(p.precio),SUBTOTAL:+(n(p.cantidad)*n(p.precio)).toFixed(2),EQUIPOS_APLICABLES:p.equipos||'Todos'}});
+    const ix=db.cotizaciones.findIndex(x=>cotId(x)===id); if(ix>=0)db.cotizaciones[ix]=cot; else db.cotizaciones.push(cot);
+    db.cotizacionPartidas.push(...ps); normalizeDB(); storage(); renderAll();
+    try{await superUpsert('COTIZACIONES',cot); for(const p of ps) await superUpsert('COTIZACION_PARTIDAS',p); alert((editCotId?'Cotización actualizada: ':'Cotización guardada: ')+numero);}catch(e){queuePending('COTIZACIONES',cot); ps.forEach(p=>queuePending('COTIZACION_PARTIDAS',p)); alert('Guardada local. Error Google: '+e.message+'. Usa Sincronizar pendientes cuando tengas señal.')}
+    editCotId=null; partidas=[];['cotAtencion','cotRequerimiento','cotPlazo','cotLugar','cotValidez','cotGarantia','cotNota','cotObs','cotEquipos'].forEach(id=>{const el=$(id); if(el)el.value=''}); if($('cotFormaPago'))$('cotFormaPago').value='Contado'; btn.textContent='Guardar cotización'; renderAll();
+  }catch(e){alert('Error: '+e.message)}
+  finally{savingCot=false;btn.disabled=false;btn.textContent=oldText;}
+}
+
+function renderCotizaciones(){const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa()); const arr=(db.cotizaciones||[]).filter(c=>(c.ID_EMPRESA||c.empresaId)===eid && c.ESTADO!=='Eliminado').sort((a,b)=>String(b.FECHA||'').localeCompare(String(a.FECHA||''))); $('cotizacionesList').innerHTML=arr.map(c=>`<div class="listItem"><div class="listHead"><b>${c.NUMERO||c.numero}</b><span>${c.ESTADO||'Emitido'} · ${money(c.TOTAL||c.total)}</span></div><p>${c.OBSERVACIONES||''}</p><button onclick="pdfCotizacion('${cotId(c)}')">PDF</button><button class="teal" onclick="ordenDesdeCot('${cotId(c)}')">Crear orden</button><button onclick="editarCotizacion('${cotId(c)}')">Editar</button><button class="gray" onclick="anularCot('${cotId(c)}')">Anular</button><button class="red" onclick="eliminarCot('${cotId(c)}')">Eliminar</button></div>`).join('')||'<p class="muted">No hay cotizaciones registradas para esta empresa.</p>'}
+function editarCotizacion(id){const c=db.cotizaciones.find(x=>cotId(x)===id); if(!c)return; editCotId=id; $('cotCliente').value=c.ID_CLIENTE||c.clienteId||''; $('cotTipo').value=c.TIPO||'Servicio'; if($('cotAtencion'))$('cotAtencion').value=c.ATENCION||''; if($('cotRequerimiento'))$('cotRequerimiento').value=c.REQUERIMIENTO||''; if($('cotFormaPago'))$('cotFormaPago').value=c.FORMA_PAGO||'Contado'; if($('cotPlazo'))$('cotPlazo').value=c.PLAZO||''; if($('cotLugar'))$('cotLugar').value=c.LUGAR||''; if($('cotValidez'))$('cotValidez').value=c.VALIDEZ||''; if($('cotGarantia'))$('cotGarantia').value=c.GARANTIA||''; if($('cotNota'))$('cotNota').value=c.NOTA||''; $('cotObs').value=c.OBSERVACIONES||''; if($('cotEquipos'))$('cotEquipos').value=c.EQUIPOS_COTIZADOS||''; partidas=cotParts(id).map((p,i)=>({item:i+1,tipo:p.TIPO||'Servicio',descripcion:p.DESCRIPCION||'',equipos:p.EQUIPOS_APLICABLES||'Todos',cantidad:n(p.CANTIDAD||1),unidad:p.UNIDAD||'srv',precio:n(p.PRECIO_UNITARIO||0)})); renderPartidas(); $('btnGuardarCot').textContent='Actualizar cotización'; showView('cotiza'); window.scrollTo(0,0);}
+async function anularCot(id){const c=db.cotizaciones.find(x=>cotId(x)===id); if(c&&confirm('¿Anular cotización?')){c.ESTADO='Anulado';c.MOTIVO_ANULACION=prompt('Motivo de anulación','')||'';storage();renderCotizaciones();await superUpsert('COTIZACIONES',c);}}
+async function eliminarCot(id){const c=db.cotizaciones.find(x=>cotId(x)===id); if(!c)return; if(!confirm('SUPERUSUARIO: ¿Eliminar cotización? Se ocultará del sistema.'))return; c.ESTADO='Eliminado';c._deleted=true;storage();renderCotizaciones();await superUpsert('COTIZACIONES',c);}
+function cotParts(id){return (db.cotizacionPartidas||[]).filter(p=>(p.ID_COTIZACION||p.cotizacionId)===id)}
+
+function parseCotEquipos(c){
+  return String(c.EQUIPOS_COTIZADOS||'').split(/
++/).map(x=>x.trim()).filter(Boolean).map((line,i)=>{const a=line.split('|').map(v=>v.trim()); return {item:i+1,equipo:a[0]||'',marca:a[1]||'',modelo:a[2]||'',serie:a[3]||'',codigo:a[4]||'',area:a[5]||''};});
+}
+function tablaCotEquipos(c){const eq=parseCotEquipos(c); if(!eq.length)return ''; return `<h3>EQUIPOS CONSIDERADOS</h3><table class="table"><thead><tr><th>ITEM</th><th>EQUIPO</th><th>MARCA</th><th>MODELO</th><th>SERIE</th><th>CÓDIGO</th><th>ÁREA</th></tr></thead><tbody>${eq.map((e,i)=>`<tr><td>${i+1}</td><td>${e.equipo}</td><td>${e.marca}</td><td>${e.modelo}</td><td>${e.serie}</td><td>${e.codigo}</td><td>${e.area}</td></tr>`).join('')}</tbody></table>`}
+function pdfCotizacion(id){
+  const c=db.cotizaciones.find(x=>cotId(x)===id); if(!c)return;
+  const e=currentEmpresa(), cli=db.clientes.find(x=>cliId(x)===(c.ID_CLIENTE||c.clienteId))||{};
+  const parts=cotParts(id); const logo=empLogo(e); const font=e.FONT||'Arial'; const fz=Number(e.FONT_SIZE||12);
+  const condiciones=`<div class="condBox"><b>CONDICIONES EMPRESARIALES:</b><br>
+  PRECIO EXPRESADO EN SOLES – INCLUYE I.G.V. (18%)<br>
+  CONTACTO: ${e.CONTACTO||e.REPRESENTANTE||'DANIEL JORGE MENESES OTOYA'} / Celular: ${e.TELEFONO||''}<br>
+  FORMA DE PAGO: ${c.FORMA_PAGO||e.FORMA_PAGO||'CONTADO COMERCIAL'}<br>
+  ${(c.TIPO||'Servicio')==='Compra'?'PLAZO DE ENTREGA':'PLAZO O DURACIÓN DEL SERVICIO'}: ${c.PLAZO||e.PLAZO||'Según coordinación y recepción de la orden de compra.'}<br>
+  ${(c.TIPO||'Servicio')==='Compra'?'LUGAR DE ENTREGA':'LUGAR DE SERVICIO'}: ${c.LUGAR||e.LUGAR_SERVICIO||'EN SU ESTABLECIMIENTO'}<br>
+  VALIDEZ DE LA OFERTA: ${c.VALIDEZ||e.VALIDEZ||'30 días hábiles.'}<br>
+  GARANTÍA: ${c.GARANTIA||e.GARANTIA||'06 meses'}<br>
+  Todos nuestros instrumentos de medición se encuentran calibrados y certificados a la fecha de la presente oferta.<br>
+  Nuestro personal se encuentra certificado y habilitado a la fecha de la presente oferta.</div>`;
+  const rows=parts.map(p=>`<tr><td>${p.ITEM}</td><td>${p.DESCRIPCION}</td><td>${p.EQUIPOS_APLICABLES||'Todos'}</td><td>${p.UNIDAD}</td><td>${p.CANTIDAD}</td><td>${money(p.PRECIO_UNITARIO)}</td><td>0.00</td><td>${money(p.SUBTOTAL)}</td></tr>`).join('');
+  const wm=logo?`<img class="watermark" src="${logo}">`:'';
+  const html=`<div class="printPage corporateQuote" style="font-family:${font};font-size:${fz}px">${wm}<div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #111;padding-bottom:8px">${logo?`<img class="printLogo" src="${logo}" onerror="this.style.display='none'">`:''}<div style="text-align:right"><div style="background:#6aa0b8;color:#fff;border-radius:14px;padding:6px 18px;font-weight:bold">Construimos relaciones de confianza y largo plazo.</div><h2 style="color:#d00;margin:12px 0 0">RUC ${e.RUC||''}</h2></div></div><h1 style="text-align:center;text-decoration:underline;margin:10px 0">${empName(e)}</h1><h2 style="text-align:right;text-decoration:underline">COTIZACIÓN: <span style="color:#d00">${c.NUMERO}</span></h2><table style="width:100%;font-size:${fz}px"><tr><td><b>CLIENTE</b></td><td>: ${cliName(cli)}</td></tr><tr><td><b>RUC</b></td><td>: ${cliDoc(cli)}</td></tr><tr><td><b>DIRECCIÓN</b></td><td>: ${cli.DIRECCION||''}</td></tr><tr><td><b>ATENCIÓN</b></td><td>: ${c.ATENCION||cli.RESPONSABLE||''}</td></tr><tr><td><b>A SU REQUERIMIENTO</b></td><td>: ${c.REQUERIMIENTO||''}</td></tr><tr><td><b>FECHA</b></td><td>: ${new Date(c.FECHA).toLocaleDateString()}</td></tr></table><p>Estimados Señores:</p><p>Por medio de la presente nos es grato saludarle asimismo presentar nuestra propuesta ${c.REQUERIMIENTO?('a su requerimiento: <b>'+c.REQUERIMIENTO+'</b>'): 'a su requerimiento'}:</p>${tablaCotEquipos(c)}<h3>TRABAJOS / PARTIDAS</h3><table class="table"><thead><tr><th>ITM</th><th>DESCRIPCIÓN</th><th>EQUIPO(S)</th><th>U.M.</th><th>CANT.</th><th>P. UNIT.</th><th>DSCTO. (%)</th><th>TOTAL</th></tr></thead><tbody>${rows}</tbody></table><p><b>Nota:</b> ${c.NOTA||c.OBSERVACIONES||''}</p><table class="table"><tr><td><b>EN: SOLES</b></td><td><b>VALOR VENTA:</b> ${money(c.SUBTOTAL)}</td><td><b>I.G.V.</b> ${money(c.IGV)}</td><td><b>TOTAL:</b> ${money(c.TOTAL)}</td></tr></table>${condiciones}<p>Sin otro particular, quedamos de ustedes.</p><div style="text-align:center;margin-top:60px">${(e.FIRMA_BASE64||e.FIRMA_URL)?`<img class="firmaImg" src="${e.FIRMA_BASE64||e.FIRMA_URL}" onerror="this.style.display='none'">`:''}<div style="border-top:1px solid #333;width:280px;margin:0 auto"></div><b>${e.REPRESENTANTE||empName(e)}</b><br><span>${e.CARGO_REPRESENTANTE||'Representante autorizado'}</span></div><footer style="position:fixed;bottom:10mm;left:12mm;right:12mm;font-size:11px;border-top:1px solid #ddd;padding-top:5px">${e.TELEFONO||''} &nbsp; ${e.CORREO||''}<br>${e.DIRECCION||''}<span style="float:right">Pág. 1 | 1</span></footer></div>`;
+  printHtml(html,c.NUMERO)
+}
+function tablaPartes(parts){return `<table class="table"><thead><tr><th>Item</th><th>Tipo</th><th>Descripción</th><th>Cantidad</th><th>P. Unit.</th><th>Subtotal</th></tr></thead><tbody>${parts.map(p=>`<tr><td>${p.ITEM}</td><td>${p.TIPO}</td><td>${p.DESCRIPCION}</td><td>${p.CANTIDAD} ${p.UNIDAD}</td><td>${money(p.PRECIO_UNITARIO)}</td><td>${money(p.SUBTOTAL)}</td></tr>`).join('')}</tbody></table>`}
+function safeTitle(t){return String(t||'Documento').replace(/[<>]/g,'')}
+function printHtml(html,title='Documento'){
+  const w=window.open('','_blank');
+  const css=document.querySelector('style').innerHTML+`
+@page{margin:12mm;} @media print{.noPrint{display:none!important} body{margin:0!important}}`;
+  w.document.open();
+  w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>${safeTitle(title)}</title><style>${css}</style>
+<style>
+.photoBox img{max-width:100%;max-height:190px;object-fit:cover;border-radius:12px;border:1px solid #d1d5db;margin:6px 0}.photoBox input{width:100%;font-size:12px}.loadingMini{opacity:.75;font-size:12px}.perfBadge{font-size:11px;color:#0f766e;font-weight:700}
+</style>
+</head><body><div class="noPrint" style="padding:10px;border-bottom:1px solid #ddd"><button onclick="window.print()">Imprimir/PDF</button><button onclick="window.close()">Cerrar</button><span style="margin-left:12px;color:#64748b;font-size:12px">En la ventana de impresión desactiva “Encabezados y pies de página” para quitar fecha/about:blank.</span></div>${html}</body></html>`);
+  w.document.close();
+  setTimeout(()=>{try{w.document.title=safeTitle(title);w.focus();}catch(e){}},300);
+}async function ordenDesdeCot(id){const c=db.cotizaciones.find(x=>cotId(x)===id); if(!c)return; const numero=await nextNumber('OS'); const oid=uid('ORD'); const ord={id:oid,ID_ORDEN:oid,ID_EMPRESA:c.ID_EMPRESA,ID_CLIENTE:c.ID_CLIENTE,ID_COTIZACION:id,NUMERO:numero,TIPO:'OS',OBSERVACIONES:c.OBSERVACIONES,FECHA:new Date().toISOString(),ESTADO:'Pendiente'}; const ps=cotParts(id).map((p,i)=>({id:uid('OP'),ID_PARTIDA:uid('OP'),ID_ORDEN:oid,ITEM:i+1,DESCRIPCION:p.DESCRIPCION,TIPO:p.TIPO,CANTIDAD:p.CANTIDAD,UNIDAD:p.UNIDAD,ESTADO:'Pendiente'})); db.ordenes.push(ord); db.ordenPartidas.push(...ps); storage();renderAll();try{await upsert('ORDENES',ord); for(const p of ps)await upsert('ORDEN_PARTIDAS',p)}catch(e){} alert('Orden creada: '+numero)}
+function addOrdenPartida(){if(!$('opDesc').value.trim())return; ordenPartidasTmp.push({descripcion:$('opDesc').value,cantidad:n($('opCant').value)||1,unidad:$('opUnidad').value}); $('opDesc').value=''; renderOrdenTmp();}
+function renderOrdenTmp(){$('ordenPartidasTmp').innerHTML=ordenPartidasTmp.map((p,i)=>`<div class="partCard">${i+1}. ${p.descripcion} - ${p.cantidad} ${p.unidad}<button class="red small" onclick="ordenPartidasTmp.splice(${i},1);renderOrdenTmp()">Quitar</button></div>`).join('')}
+async function guardarOrdenDirecta(){if(!$('ordCliente').value)return alert('Seleccione cliente'); if(!ordenPartidasTmp.length)return alert('Agregue partidas'); const tipo=$('ordTipo').value, oid=editOrdenId||uid('ORD'), eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa()); const old=db.ordenes.find(o=>ordId(o)===oid); const numero=old?old.NUMERO:await nextNumber(tipo); const ord={...(old||{}),id:oid,ID_ORDEN:oid,ID_EMPRESA:eid,ID_CLIENTE:$('ordCliente').value,NUMERO:numero,TIPO:tipo,TECNICO:$('ordTecnico').value,OBSERVACIONES:$('ordObs').value,FECHA:old?.FECHA||new Date().toISOString(),ESTADO:old?.ESTADO||'Pendiente',ACTUALIZADO_POR:'SUPERUSUARIO',ACTUALIZADO_EN:new Date().toISOString()}; db.ordenPartidas=(db.ordenPartidas||[]).filter(p=>p.ID_ORDEN!==oid); const ps=ordenPartidasTmp.map((p,i)=>({id:uid('OP'),ID_PARTIDA:uid('OP'),ID_ORDEN:oid,ITEM:i+1,DESCRIPCION:p.descripcion,CANTIDAD:p.cantidad,UNIDAD:p.unidad,ESTADO:'Pendiente'})); const ix=db.ordenes.findIndex(o=>ordId(o)===oid); if(ix>=0)db.ordenes[ix]=ord; else db.ordenes.push(ord); db.ordenPartidas.push(...ps);storage();renderAll();try{await superUpsert('ORDENES',ord); for(const p of ps)await superUpsert('ORDEN_PARTIDAS',p)}catch(e){} editOrdenId=null; ordenPartidasTmp=[];renderOrdenTmp();alert('Orden guardada: '+numero)}
+function renderOrdenes(){const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa()); const arr=(db.ordenes||[]).filter(o=>(o.ID_EMPRESA||o.empresaId)===eid && o.ESTADO!=='Eliminado'); $('ordenesList').innerHTML=arr.map(o=>`<div class="listItem"><div class="listHead"><b>${o.NUMERO}</b><span>${o.ESTADO}</span></div><p>${o.OBSERVACIONES||''}</p><button onclick="showView('ejecucion');$('execOrden').value='${ordId(o)}';cargarEjecucion()">Ejecutar</button><button onclick="selectDocOrden('${ordId(o)}')">Acta/Informe</button><button onclick="editarOrden('${ordId(o)}')">Editar</button><button class="gray" onclick="anularOrden('${ordId(o)}')">Anular</button><button class="red" onclick="eliminarOrden('${ordId(o)}')">Eliminar</button></div>`).join('')||'<p class="muted">Sin órdenes</p>'}
+function editarOrden(id){const o=db.ordenes.find(x=>ordId(x)===id); if(!o)return; editOrdenId=id; $('ordCliente').value=o.ID_CLIENTE||''; $('ordTipo').value=o.TIPO||'OS'; $('ordTecnico').value=o.TECNICO||''; $('ordObs').value=o.OBSERVACIONES||''; ordenPartidasTmp=(db.ordenPartidas||[]).filter(p=>p.ID_ORDEN===id).map(p=>({descripcion:p.DESCRIPCION,cantidad:n(p.CANTIDAD||1),unidad:p.UNIDAD||'srv'})); renderOrdenTmp(); showView('ordenes'); window.scrollTo(0,0);}
+async function anularOrden(id){const o=db.ordenes.find(x=>ordId(x)===id); if(o&&confirm('¿Anular orden?')){o.ESTADO='Anulado';o.MOTIVO_ANULACION=prompt('Motivo','')||'';storage();renderOrdenes();await superUpsert('ORDENES',o)}}
+async function eliminarOrden(id){const o=db.ordenes.find(x=>ordId(x)===id); if(o&&confirm('SUPERUSUARIO: ¿Eliminar orden?')){o.ESTADO='Eliminado';o._deleted=true;storage();renderOrdenes();await superUpsert('ORDENES',o)}}
+function renderExecSelects(){
+  const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa())||empresaActiva;
+  const ordenes=(db.ordenes||[]).filter(o=>String(o.ID_EMPRESA||o.empresaId||eid)===String(eid) && o.ESTADO!=='Eliminado');
+  const opts=ordenes.map(o=>`<option value="${ordId(o)}">${o.NUMERO} - ${o.ESTADO}</option>`).join('');
+  if($('execOrden'))$('execOrden').innerHTML=opts||'<option value="">Sin órdenes</option>';
+  if($('docOrden'))$('docOrden').innerHTML=opts||'<option value="">Sin órdenes</option>';
+}
+function cargarEjecucion(){const oid=$('execOrden').value; const ps=(db.ordenPartidas||[]).filter(p=>p.ID_ORDEN===oid); $('execPanel').innerHTML=ps.map(p=>`<div class="partCard"><h4>${p.ITEM}. ${p.DESCRIPCION}</h4><label class="docCheck"><input type="checkbox" checked onchange="saveExecField('${p.id}','includeInforme',this.checked)"> Incluir esta partida en informe</label><select onchange="saveExecField('${p.id}','estado',this.value)"><option>Pendiente</option><option>En ejecución</option><option>Ejecutado</option><option>Observado</option></select><textarea placeholder="Observación" onchange="saveExecField('${p.id}','obs',this.value)"></textarea><div class="photoGrid">${['antes','durante','despues'].map(f=>`<div class="photoBox"><b>${f.toUpperCase()}</b><input type="file" accept="image/*,.pdf" multiple onchange="savePhoto('${p.id}','${f}',this)"><div id="ph_${p.id}_${f}"></div></div>`).join('')}</div></div>`).join('')||'<p>Seleccione una orden con partidas.</p>'; renderPhotos();}
+function saveExecField(pid,k,v){let r=db.ejecucionTecnica.find(x=>x.ID_PARTIDA===pid); if(!r){r={id:uid('EXE'),ID_PARTIDA:pid};db.ejecucionTecnica.push(r)} r[k]=v;storage();}
+async function savePhoto(pid,f,input){
+  const files=[...(input.files||[])]; if(!files.length)return;
+  const oldDisabled=input.disabled; input.disabled=true;
+  const box=$('ph_'+pid+'_'+f); const oldHtml=box?box.innerHTML:'';
+  if(box) box.innerHTML='<div class="notice">Optimizando evidencia...</div>'+oldHtml;
+  try{
+    for(const file of files){
+      const isPdf=file.type==='application/pdf'||file.name.toLowerCase().endsWith('.pdf');
+      let data=isPdf ? await fileToBase64(file) : await compressImageFile(file,1200,0.70);
+      const ev={id:uid('EVI'),ID_EVIDENCIA:uid('EVI'),ID_PARTIDA:pid,FASE:f,NOMBRE:file.name,TIPO:isPdf?'PDF':'IMAGEN',DATA_URL:data,FECHA:new Date().toISOString(),PESO_KB:Math.round((data||'').length/1024)};
+      db.evidencias.push(ev);
+    }
+    storage(); renderPhotos();
+  }catch(err){ alert('No se pudo cargar la evidencia: '+err); }
+  finally{ input.value=''; input.disabled=oldDisabled; }
+}
+function renderPhotos(){
+  const groups={};
+  (db.evidencias||[]).forEach(ev=>{const k=(ev.ID_PARTIDA||'')+'_'+(ev.FASE||''); groups[k]=groups[k]||[]; groups[k].push(ev);});
+  Object.keys(groups).forEach(k=>{
+    const el=$('ph_'+k); if(!el)return;
+    el.innerHTML=groups[k].map(ev=>ev.TIPO==='PDF'
+      ? `<div class="notice">📄 ${ev.NOMBRE||'Archivo PDF'} <button class="red small" onclick="eliminarEvidencia('${ev.id}')">Quitar</button></div>`
+      : `<img loading="lazy" src="${ev.DATA_URL}"><div><small>${ev.NOMBRE||'Evidencia'} ${ev.PESO_KB?('· '+ev.PESO_KB+' KB'):''}</small> <button class="red small" onclick="eliminarEvidencia('${ev.id}')">Quitar</button></div>`
+    ).join('');
+  });
+}
+function eliminarEvidencia(id){db.evidencias=(db.evidencias||[]).filter(e=>e.id!==id&&e.ID_EVIDENCIA!==id);storage();renderPhotos();}
+async function guardarEjecucionActual(){
+  const oid=$('execOrden').value;
+  if(!oid)return alert('Seleccione una orden.');
+  const orden=db.ordenes.find(o=>ordId(o)===oid);
+  if(!orden)return alert('Orden no encontrada.');
+  const partes=(db.ordenPartidas||[]).filter(p=>p.ID_ORDEN===oid);
+  const execs=(db.ejecucionTecnica||[]).filter(e=>partes.some(p=>p.id===e.ID_PARTIDA||p.ID_PARTIDA===e.ID_PARTIDA));
+  const evids=(db.evidencias||[]).filter(e=>partes.some(p=>p.id===e.ID_PARTIDA||p.ID_PARTIDA===e.ID_PARTIDA));
+  orden.ESTADO=execs.length && execs.every(e=>String(e.estado||e.ESTADO||'').toLowerCase()==='ejecutado')?'Ejecutado':'En ejecución';
+  orden.ACTUALIZADO_EN=new Date().toISOString();
+  storage();renderAll();$('execOrden').value=oid;cargarEjecucion();
+  try{
+    await upsert('ORDENES',orden);
+    for(const e of execs){e.ID_ORDEN=oid; e.ESTADO=e.estado||e.ESTADO||'En ejecución'; e.OBSERVACION=e.obs||e.OBSERVACION||''; e.FECHA=new Date().toISOString(); await upsert('EJECUCION_TECNICA',e);}
+    for(const ev of evids){ev.ID_ORDEN=oid; ev.FECHA=new Date().toISOString(); await upsert('EVIDENCIAS',ev);}
+    alert('Ejecución guardada correctamente.');
+  }catch(err){console.error(err);alert('La ejecución quedó guardada localmente, pero no pudo sincronizar con Google.');}
+}
+function selectDocOrden(id){showView('informes');$('docOrden').value=id;}
+function getFirma(id){return $(id).toDataURL('image/png')}
+async function guardarActa(){
+  const oid=$('docOrden').value; if(!oid)return alert('Seleccione orden');
+  const o=(db.ordenes||[]).find(x=>ordId(x)===oid)||{};
+  const eid=o.ID_EMPRESA||empresaActiva||empId(currentEmpresa());
+  const rec={id:editActaId||uid('ACT'),ID_ACTA:editActaId||uid('ACT'),ID_EMPRESA:eid,ID_ORDEN:oid,RESPONSABLE:$('actResponsable').value,DNI:$('actDni').value,CARGO:$('actCargo').value,ZONA:$('actZona').value,OS:$('actOs').value,SIAF:$('actSiaf').value,OBSERVACIONES_CLIENTE:$('actObs').value,OBSERVACIONES_TECNICO:($('actObsTecnico')?$('actObsTecnico').value:''),FIRMA_CLIENTE:getFirma('firmaCliente'),FIRMA_TECNICO:getFirma('firmaTecnico'),FECHA:$('actFecha').value||new Date().toISOString()};
+  const ix=db.actasConformidad.findIndex(x=>(x.id||x.ID_ACTA)===(editActaId||rec.id)); if(ix>=0)db.actasConformidad[ix]=rec; else db.actasConformidad.push(rec);
+  editActaId=null;storage();renderAll();try{await superUpsert('ACTAS_CONFORMIDAD',rec)}catch(e){queuePending('ACTAS_CONFORMIDAD',rec)} alert('Acta guardada')
+}
+async function guardarInforme(){
+  const oid=$('docOrden').value;if(!oid)return alert('Seleccione orden');
+  const rec={id:editInformeId||uid('INF'),ID_INFORME:editInformeId||uid('INF'),ID_ORDEN:oid,ENTIDAD:$('infEntidad').value,ATENCION:$('infAtencion').value,ASUNTO:$('infAsunto').value,ANTECEDENTES:$('infAnte').value,TRABAJOS:$('infTrabajos').value,RECOMENDACIONES:$('infReco').value,GARANTIA:$('infGarantia').value,FECHA:$('infFecha').value||new Date().toISOString()};
+  {const ix=db.informesTecnicos.findIndex(x=>(x.id||x.ID_INFORME)===(editInformeId||rec.id)); if(ix>=0)db.informesTecnicos[ix]=rec; else db.informesTecnicos.push(rec);} editInformeId=null;storage();renderAll();try{await superUpsert('INFORMES_TECNICOS',rec)}catch(e){queuePending('INFORMES_TECNICOS',rec)} alert('Informe guardado')
+}
+
+function nombreAnioOficial(){
+  const y = new Date().getFullYear();
+  const nombres = {
+    2025:'Año de la recuperación y consolidación de la economía peruana',
+    2026:'Año de la Esperanza y el Fortalecimiento de la Democracia'
+  };
+  return nombres[y] || ('Año ' + y);
+}
+function parseEquiposAtendidos(){
+  const lines = (($('docEquipos') && $('docEquipos').value) || '').split(/\n+/).map(x=>x.trim()).filter(Boolean);
+  let equipos = lines.map((line,i)=>{
+    const a=line.split('|').map(x=>x.trim());
+    return {item:i+1,equipo:a[0]||'',marca:a[1]||'',modelo:a[2]||'',serie:a[3]||'',codigo:a[4]||'',area:a[5]||''};
+  }).filter(e=>e.equipo);
+  if(!equipos.length && (($('eqNombre') && $('eqNombre').value)||($('eqMarca')&&$('eqMarca').value)||($('eqModelo')&&$('eqModelo').value)||($('eqSerie')&&$('eqSerie').value))){
+    equipos=[{item:1,equipo:$('eqNombre').value||'',marca:$('eqMarca').value||'',modelo:$('eqModelo').value||'',serie:$('eqSerie').value||'',codigo:$('eqCodigo').value||'',area:$('eqArea').value||''}];
+  }
+  return equipos;
+}
+function tablaEquipos(equipos){
+  if(!equipos.length) return '<p><b>Equipo atendido:</b> No especificado.</p>';
+  return `<table class="table"><thead><tr><th>ITEM</th><th>EQUIPO</th><th>MARCA</th><th>MODELO</th><th>SERIE</th><th>CÓDIGO</th><th>ÁREA</th></tr></thead><tbody>${equipos.map((e,i)=>`<tr><td>${i+1}</td><td>${e.equipo||''}</td><td>${e.marca||''}</td><td>${e.modelo||''}</td><td>${e.serie||''}</td><td>${e.codigo||''}</td><td>${e.area||''}</td></tr>`).join('')}</tbody></table>`;
+}
+function tablaTrabajos(ps){
+  return `<table class="table"><thead><tr><th>ITEM</th><th>TRABAJO / PARTIDA REALIZADA</th><th>UNIDAD</th><th>CANT.</th><th>ESTADO</th></tr></thead><tbody>${ps.map((p,i)=>{const ex=(db.ejecucionTecnica||[]).find(x=>x.ID_PARTIDA===p.id||x.ID_PARTIDA===p.ID_PARTIDA)||{};return `<tr><td>${i+1}</td><td>${p.DESCRIPCION||''}</td><td>${p.UNIDAD||''}</td><td>${p.CANTIDAD||''}</td><td>${ex.ESTADO||ex.estado||p.ESTADO||''}</td></tr>`}).join('')}</tbody></table>`;
+}
+function evidenciasHtml(evid){
+  if(!evid.length) return '<p class="muted">Sin evidencias fotográficas registradas.</p>';
+  if(evid.length===1) return `<div style="text-align:center"><img style="max-width:92%;max-height:430px;border:1px solid #ddd;border-radius:12px" src="${evid[0].DATA_URL||evid[0].dataUrl||''}"></div>`;
+  return `<div class="photoGrid">${evid.map((ev,i)=>`<div><b>${ev.FASE?String(ev.FASE).toUpperCase():'EVIDENCIA '+(i+1)}</b><br><img style="max-width:100%;border:1px solid #ddd;border-radius:10px" src="${ev.DATA_URL||ev.dataUrl||''}"></div>`).join('')}</div>`;
+}
+function pdfActa(){
+  const oid=$('docOrden').value, o=db.ordenes.find(x=>ordId(x)===oid)||{}, e=currentEmpresa(), cli=db.clientes.find(c=>cliId(c)===o.ID_CLIENTE)||{};
+  const logo=empLogo(e); const equipos=parseEquiposAtendidos();
+  const obsCliente=($('actObs')&&$('actObs').value)||'................................................................................................................................................';
+  const obsTecnico=($('actObsTecnico')&&$('actObsTecnico').value)||'................................................................................................................................................';
+  const html=`<div class="printPage"><div class="printHead">${logo?`<img class="printLogo" src="${logo}">`:''}<div><b>Construimos relaciones de confianza y largo plazo.</b><h2>${empName(e)}</h2><p>RUC: ${e.RUC||''}<br>${e.DIRECCION||''}<br>${e.TELEFONO||''} ${e.CORREO||''}</p></div></div><p style="text-align:center"><i>“${nombreAnioOficial()}”.</i></p><h2 style="text-align:center">ACTA DE CONFORMIDAD DEL SERVICIO DE MANTENIMIENTO PREVENTIVO Y/O CORRECTIVO</h2><p>Yo, <b>${$('actResponsable').value}</b>, con DNI N° <b>${$('actDni').value}</b>, personal encargado de <b>${$('actCargo').value}</b>, zona / IPRESS <b>${$('actZona').value}</b>, doy conformidad del servicio ejecutado al equipo o equipos detallados:</p><h3>Equipo(s) atendido(s)</h3>${tablaEquipos(equipos)}<p>Con orden de servicio N° <b>${$('actOs').value||o.NUMERO||''}</b> – N° Exp. SIAF <b>${$('actSiaf').value||''}</b>, por parte de <b>${cliName(cli)}</b>.</p><p><b>FECHA:</b> ${$('actFecha').value||new Date().toLocaleDateString()}</p><h3>Observaciones del cliente / responsable</h3><p>${obsCliente}</p><h3>Observaciones del técnico / personal que ejecuta el servicio</h3><p>${obsTecnico}</p><div style="display:flex;justify-content:space-around;margin-top:55px"><div style="text-align:center"><img class="firmaImg" src="${getFirma('firmaCliente')}"><div style="border-top:1px solid #333;width:260px"></div>Personal que da la conformidad</div><div style="text-align:center"><img class="firmaImg" src="${getFirma('firmaTecnico')}"><div style="border-top:1px solid #333;width:260px"></div>Personal que ejecuta el mantenimiento</div></div></div>`;
+  printHtml(html,'Acta-'+(o.NUMERO||'servicio'))
+}
+function pdfInforme(){
+  const oid=$('docOrden').value, o=db.ordenes.find(x=>ordId(x)===oid)||{}, e=currentEmpresa(), cli=db.clientes.find(c=>cliId(c)===o.ID_CLIENTE)||{};
+  const allPs=db.ordenPartidas.filter(p=>p.ID_ORDEN===oid); const ps=allPs.filter(p=>{const ex=db.ejecucionTecnica.find(x=>x.ID_PARTIDA===p.id||x.ID_PARTIDA===p.ID_PARTIDA); return !ex || ex.includeInforme!==false;});
+  const evid=db.evidencias.filter(ev=>ps.some(p=>p.id===ev.ID_PARTIDA||p.ID_PARTIDA===ev.ID_PARTIDA)); const logo=empLogo(e); const equipos=parseEquiposAtendidos();
+  const html=`<div class="printPage"><div class="printHead">${logo?`<img class="printLogo" src="${logo}">`:''}<div><b>Construimos relaciones de confianza y largo plazo.</b><h2>${empName(e)}</h2><p>RUC: ${e.RUC||''}<br>${e.DIRECCION||''}<br>${e.TELEFONO||''} ${e.CORREO||''}</p></div></div><p style="text-align:center"><i>“${nombreAnioOficial()}”.</i></p><h2 style="text-align:center">INFORME DEL SERVICIO DE MANTENIMIENTO DE EQUIPOS BIOMÉDICOS</h2><p><b>SEÑORES:</b> ${$('infEntidad').value||cliName(cli)}<br><b>ATENCIÓN:</b> ${$('infAtencion').value||'Área usuaria y logística'}<br><b>ASUNTO:</b> ${$('infAsunto').value||'Servicio de mantenimiento de equipos biomédicos'}<br><b>ANTECEDENTES:</b> ${$('infAnte').value||('Orden de servicio '+(o.NUMERO||''))}</p><h3>Equipo(s) intervenido(s)</h3>${tablaEquipos(equipos)}<h3>Actividades / trabajos realizados</h3>${tablaTrabajos(ps)}<h3>Se realizó:</h3><p>${$('infTrabajos').value||ps.map(p=>'• '+p.DESCRIPCION).join('<br>')}</p><h3>Evidencias fotográficas</h3>${evidenciasHtml(evid)}<h3>Recomendaciones</h3><p>${$('infReco').value||''}</p><p><b>Garantía:</b> ${$('infGarantia').value||'Según condiciones comerciales.'}</p><p><b>Fecha:</b> ${$('infFecha').value||new Date().toLocaleDateString()}</p><div style="text-align:center;margin-top:60px"><img class="firmaImg" src="${getFirma('firmaTecnico')}"><div style="border-top:1px solid #333;width:280px;margin:0 auto"></div>Responsable técnico</div></div>`;
+  printHtml(html,'Informe-'+(o.NUMERO||'servicio'))
+}
+
+function renderDocsLists(){
+  const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa())||empresaActiva;
+  const ordenesActivas=(db.ordenes||[]).filter(o=>String(o.ID_EMPRESA||o.empresaId||eid)===String(eid));
+  const ordenIds=ordenesActivas.map(o=>ordId(o));
+  const act=$('actasList'); if(act){act.innerHTML=(db.actasConformidad||[]).filter(a=>ordenIds.includes(a.ID_ORDEN)||String(a.ID_EMPRESA||'')===String(eid)).map(a=>{const o=(db.ordenes||[]).find(x=>ordId(x)===a.ID_ORDEN)||{};return `<div class="listItem"><b>${o.NUMERO||a.ID_ORDEN||''}</b><p>${a.RESPONSABLE||''} - ${new Date(a.FECHA).toLocaleString()}</p><button onclick="$('docOrden').value='${a.ID_ORDEN}';pdfActa()">PDF</button><button onclick="editarActa('${a.id||a.ID_ACTA}')">Editar</button><button class="red" onclick="eliminarActa('${a.id||a.ID_ACTA}')">Eliminar</button></div>`}).join('')||'<p class="muted">Sin actas guardadas</p>';}
+  const inf=$('informesList'); if(inf){inf.innerHTML=(db.informesTecnicos||[]).filter(i=>ordenIds.includes(i.ID_ORDEN)||String(i.ID_EMPRESA||'')===String(eid)).map(i=>{const o=(db.ordenes||[]).find(x=>ordId(x)===i.ID_ORDEN)||{};return `<div class="listItem"><b>${o.NUMERO||i.ID_ORDEN||''}</b><p>${new Date(i.FECHA).toLocaleString()}</p><button onclick="$('docOrden').value='${i.ID_ORDEN}';pdfInforme()">PDF</button><button onclick="editarInforme('${i.id||i.ID_INFORME}')">Editar</button><button class="red" onclick="eliminarInforme('${i.id||i.ID_INFORME}')">Eliminar</button></div>`}).join('')||'<p class="muted">Sin informes guardados</p>';}
+}
+
+function editarActa(id){const a=(db.actasConformidad||[]).find(x=>(x.id||x.ID_ACTA)===id); if(!a)return; editActaId=id; $('docOrden').value=a.ID_ORDEN||''; $('actResponsable').value=a.RESPONSABLE||''; $('actDni').value=a.DNI||''; $('actCargo').value=a.CARGO||''; $('actZona').value=a.ZONA||''; $('actOs').value=a.OS||''; $('actSiaf').value=a.SIAF||''; $('actObs').value=a.OBSERVACIONES_CLIENTE||a.OBSERVACIONES||''; if($('actObsTecnico'))$('actObsTecnico').value=a.OBSERVACIONES_TECNICO||''; $('actFecha').value=(a.FECHA||'').slice(0,10); showView('informes');}
+async function eliminarActa(id){const a=(db.actasConformidad||[]).find(x=>(x.id||x.ID_ACTA)===id); if(a&&confirm('SUPERUSUARIO: ¿Eliminar acta?')){a.ESTADO='Eliminado';a._deleted=true;storage();renderDocsLists();await superUpsert('ACTAS_CONFORMIDAD',a)}}
+function editarInforme(id){const i=(db.informesTecnicos||[]).find(x=>(x.id||x.ID_INFORME)===id); if(!i)return; editInformeId=id; $('docOrden').value=i.ID_ORDEN||''; $('infEntidad').value=i.ENTIDAD||''; $('infAtencion').value=i.ATENCION||''; $('infAsunto').value=i.ASUNTO||''; $('infAnte').value=i.ANTECEDENTES||''; $('infTrabajos').value=i.TRABAJOS||''; $('infReco').value=i.RECOMENDACIONES||''; $('infGarantia').value=i.GARANTIA||''; $('infFecha').value=(i.FECHA||'').slice(0,10); showView('informes');}
+async function eliminarInforme(id){const i=(db.informesTecnicos||[]).find(x=>(x.id||x.ID_INFORME)===id); if(i&&confirm('SUPERUSUARIO: ¿Eliminar informe?')){i.ESTADO='Eliminado';i._deleted=true;storage();renderDocsLists();await superUpsert('INFORMES_TECNICOS',i)}}
+
+function cargarCorrelativoUI(update=true){
+  if(!$('cfgTipo'))return;
+  const e=currentEmpresa(); const eid=e.ID_EMPRESA||empId(e)||'EMP001';
+  const tipo=$('cfgTipo').value||'COT'; const sede=$('cfgSede').value||'001';
+  const corr=(db.correlativos||[]).find(r=>String(r.empresaId||r.ID_EMPRESA||'')===String(eid)&&String(r.tipo||r.TIPO||'')===tipo&&String(r.sede||r.SEDE||r.CODIGO_SEDE||'001')===sede) || (db.correlativos||[]).find(r=>String(r.tipo||r.TIPO||'')===tipo);
+  if(update && corr){$('cfgLast').value=Number(corr.last||corr.LAST||0);$('cfgDigits').value=Number(corr.digits||corr.DIGITS||5);}
+  const last=Number($('cfgLast').value||0), dig=Number($('cfgDigits').value||5);
+  $('cfgPreview').textContent=tipo+'-'+sede+'-'+String(last+1).padStart(dig,'0');
+}
+
+// ================= QR / CÓDIGOS / REPUESTOS FASE 2.1 =================
+let scanStream=null, scanTimer=null, barcodeDetector=null;
+function repId(r){return r.ID_REPUESTO||r.id||r.CODIGO||r.CODIGO_BARRAS||''}
+function repCodigo(r){return r.CODIGO||r.CODIGO_BARRAS||r.SKU||repId(r)}
+function repDesc(r){return r.DESCRIPCION||r.descripcion||r.NOMBRE||''}
+function repEmpresa(r){return r.ID_EMPRESA||r.empresaId||''}
+function qrData(tipo,id){return `SP|${tipo}|${id}`}
+function qrImg(data,size=130){return `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&margin=1&data=${encodeURIComponent(data)}`}
+function renderRepuestos(){
+ const el=$('repuestosList'); if(!el) return; const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa());
+ const arr=(db.repuestos||[]).filter(r=>!repEmpresa(r)||repEmpresa(r)===eid);
+ el.innerHTML=arr.map(r=>`<div class="listItem"><div class="listHead"><b>${repDesc(r)||'Sin descripción'}</b><span>${repCodigo(r)||''}</span></div><p>Stock: ${r.STOCK||0} ${r.UNIDAD||'und'} · Mín: ${r.STOCK_MINIMO||0} · ${money(r.PRECIO||0)}</p><div class="row"><button onclick="editarRepuesto('${repId(r)}')">Editar</button><button class="teal" onclick="mostrarQR('${repCodigo(r)}','${repDesc(r).replace(/'/g,"\\'")}')">QR</button><button class="red" onclick="eliminarRepuesto('${repId(r)}')">Eliminar local</button></div></div>`).join('')||'<p class="muted">Sin repuestos registrados.</p>';
+}
+function limpiarRepuesto(){['repCodigo','repDesc','repMarca','repModelo','repStock','repStockMin','repPrecio'].forEach(id=>$(id)&&($(id).value='')); if($('repUnidad'))$('repUnidad').value='und'; if($('qrRepuestoBox'))$('qrRepuestoBox').innerHTML=''; window.editRepId='';}
+function editarRepuesto(id){const r=(db.repuestos||[]).find(x=>repId(x)===id); if(!r)return; window.editRepId=id; $('repCodigo').value=repCodigo(r); $('repDesc').value=repDesc(r); $('repMarca').value=r.MARCA||''; $('repModelo').value=r.MODELO||''; $('repUnidad').value=r.UNIDAD||'und'; $('repStock').value=r.STOCK||0; $('repStockMin').value=r.STOCK_MINIMO||0; $('repPrecio').value=r.PRECIO||0; showView('qrlogistica');}
+async function guardarRepuesto(){
+ const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa()); const codigo=$('repCodigo').value.trim(); const desc=$('repDesc').value.trim();
+ if(!codigo||!desc)return alert('Ingrese código y descripción.');
+ const dup=(db.repuestos||[]).find(r=>repCodigo(r)===codigo && repId(r)!==window.editRepId && (!repEmpresa(r)||repEmpresa(r)===eid)); if(dup)return alert('Ya existe un repuesto con ese código.');
+ const rec={id:window.editRepId||uid('REP'),ID_REPUESTO:window.editRepId||uid('REP'),ID_EMPRESA:eid,CODIGO:codigo,CODIGO_BARRAS:codigo,DESCRIPCION:desc,MARCA:$('repMarca').value.trim(),MODELO:$('repModelo').value.trim(),UNIDAD:$('repUnidad').value||'und',STOCK:Number($('repStock').value||0),STOCK_MINIMO:Number($('repStockMin').value||0),PRECIO:Number($('repPrecio').value||0),ESTADO:'Activo',UPDATED_AT:new Date().toISOString()};
+ const i=db.repuestos.findIndex(r=>repId(r)===window.editRepId || repCodigo(r)===codigo); if(i>=0)db.repuestos[i]=rec; else db.repuestos.push(rec);
+ storage(); renderRepuestos(); limpiarRepuesto(); try{await upsert('REPUESTOS',rec)}catch(e){queuePending('REPUESTOS',rec); alert('Guardado local. Pendiente de sincronizar.');}
+}
+function eliminarRepuesto(id){if(!confirm('Eliminar repuesto local?'))return; db.repuestos=db.repuestos.filter(r=>repId(r)!==id); storage(); renderRepuestos();}
+function mostrarQR(codigo,desc=''){const data=qrData('REP',codigo); $('qrRepuestoBox').innerHTML=`<div class="qrBox"><img src="${qrImg(data)}"><p><b>${codigo}</b><br>${desc||''}</p></div>`;}
+function generarQrRepuesto(){const c=$('repCodigo').value.trim(); if(!c)return alert('Ingrese código.'); mostrarQR(c,$('repDesc').value.trim());}
+function buscarCodigoManual(){procesarCodigo(($('scanManual').value||'').trim());}
+function procesarCodigo(raw){
+ const code=String(raw||'').replace(/^SP\|REP\|/,'').replace(/^SP\|ORD\|/,'').trim(); if(!code)return;
+ const rep=(db.repuestos||[]).find(r=>repCodigo(r)===code||repId(r)===code); const out=$('scanResultado');
+ if(rep){out.innerHTML=`<div class="notice"><b>Repuesto encontrado:</b><br>${repDesc(rep)}<br>Código: ${repCodigo(rep)}<br>Stock: ${rep.STOCK||0} ${rep.UNIDAD||'und'}<br><button onclick="editarRepuesto('${repId(rep)}')">Editar repuesto</button></div>`;}
+ else {out.innerHTML=`<div class="notice">Código leído: <b>${code}</b><br>No existe. Puedes registrarlo como nuevo repuesto.</div>`; $('repCodigo').value=code;}
+}
+async function iniciarEscaner(){
+ const video=$('scanVideo'), msg=$('scanMsg');
+ if(!('BarcodeDetector' in window)){msg.textContent='Este navegador no soporta lector automático. Usa ingreso manual o Android Chrome actualizado.';return;}
+ try{
+  barcodeDetector=new BarcodeDetector({formats:['qr_code','code_128','ean_13','ean_8','upc_a','upc_e','code_39']});
+  scanStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}});
+  video.srcObject=scanStream; video.style.display='block'; await video.play(); msg.textContent='Escaneando... apunte al QR o código de barras.';
+  scanTimer=setInterval(async()=>{try{const codes=await barcodeDetector.detect(video); if(codes&&codes[0]){procesarCodigo(codes[0].rawValue); detenerEscaner();}}catch(e){}},700);
+ }catch(e){msg.textContent='No se pudo abrir cámara: '+e.message;}
+}
+function detenerEscaner(){if(scanTimer)clearInterval(scanTimer); scanTimer=null; if(scanStream){scanStream.getTracks().forEach(t=>t.stop());scanStream=null;} if($('scanVideo'))$('scanVideo').style.display='none'; if($('scanMsg'))$('scanMsg').textContent='Escáner detenido.';}
+
+async function guardarCorrelativo(){
+  const e=currentEmpresa(); const eid=e.ID_EMPRESA||empId(e)||'EMP001';
+  const tipo=($('cfgTipo').value||'COT').trim().toUpperCase(); const sede=($('cfgSede').value||'001').trim();
+  const rec={id:'CORR-'+eid+'-'+tipo+'-'+sede,empresaId:eid,tipo,sede,last:Number($('cfgLast').value||0),digits:Number($('cfgDigits').value||5),estado:'Activo',updatedAt:new Date().toISOString()};
+  const i=(db.correlativos||[]).findIndex(r=>r.id===rec.id || ((r.empresaId||r.ID_EMPRESA)===eid&&(r.tipo||r.TIPO)===tipo&&(r.sede||r.SEDE||r.CODIGO_SEDE||'001')===sede));
+  if(i>=0)db.correlativos[i]=rec; else db.correlativos.push(rec);
+  storage();cargarCorrelativoUI(false);
+  try{await upsert('CORRELATIVOS',rec);alert('Correlativo guardado. Siguiente: '+$('cfgPreview').textContent)}catch(e){queuePending('CORRELATIVOS',rec);alert('Correlativo guardado local; pendiente de sincronizar.');}
+}
+
+function importFirma(canvasId,input){const file=input.files&&input.files[0]; if(!file)return; const r=new FileReader(); r.onload=()=>{const c=$(canvasId),ctx=c.getContext('2d'),img=new Image(); img.onload=()=>{ctx.clearRect(0,0,c.width,c.height); const ratio=Math.min(c.width/img.width,c.height/img.height); const w=img.width*ratio,h=img.height*ratio; ctx.drawImage(img,(c.width-w)/2,(c.height-h)/2,w,h);}; img.src=r.result;}; r.readAsDataURL(file);}
+function setupSignatures(){['firmaCliente','firmaTecnico'].forEach(id=>{const c=$(id); if(!c)return; const ctx=c.getContext('2d'); let draw=false; function pos(e){const r=c.getBoundingClientRect(); const t=e.touches?e.touches[0]:e; return {x:t.clientX-r.left,y:t.clientY-r.top}} function start(e){draw=true; const p=pos(e);ctx.beginPath();ctx.moveTo(p.x,p.y);e.preventDefault()} function move(e){if(!draw)return; const p=pos(e);ctx.lineTo(p.x,p.y);ctx.stroke();e.preventDefault()} c.onmousedown=start;c.onmousemove=move;c.onmouseup=()=>draw=false;c.onmouseleave=()=>draw=false;c.ontouchstart=start;c.ontouchmove=move;c.ontouchend=()=>draw=false;})}
+function clearCanvas(id){const c=$(id);c.getContext('2d').clearRect(0,0,c.width,c.height)}
+
+// ================= FIX 3.3: BLOQUEO GLOBAL + AISLAMIENTO DE ACTA/INFORME =================
+let __servitecBusy=false;
+let __servitecBusyTimer=null;
+function setBusyUI(on,text='Procesando...'){
+  __servitecBusy=!!on;
+  const ov=$('busyOverlay'), tx=$('busyText'), rel=$('busyRelease');
+  if(tx) tx.textContent=text;
+  if(ov) ov.style.display=on?'flex':'none';
+  document.body.classList.toggle('appBusy',!!on);
+  if(rel) rel.style.display='none';
+  clearTimeout(__servitecBusyTimer);
+  if(on){
+    __servitecBusyTimer=setTimeout(()=>{ if(rel) rel.style.display='inline-block'; if(tx) tx.textContent='La acción sigue procesando. Si terminó o se quedó colgada, libera el bloqueo.'; },25000);
+  }
+}
+function forceUnlockUI(){ setBusyUI(false); }
+async function runLocked(label,fn){
+  if(__servitecBusy){ alert('Espera a que termine la acción actual.'); return; }
+  try{ setBusyUI(true,label||'Procesando...'); return await Promise.resolve(fn()); }
+  catch(e){ console.error(e); alert('Error: '+(e&&e.message?e.message:e)); }
+  finally{ setBusyUI(false); }
+}
+function wrapAction(name,label){
+  const original=window[name];
+  if(typeof original!=='function' || original.__wrappedBusy) return;
+  const wrapped=function(...args){ return runLocked(label||'Procesando...',()=>original.apply(this,args)); };
+  wrapped.__wrappedBusy=true;
+  window[name]=wrapped;
+}
+function activeOrderIds(){
+  const eid=currentEmpresa().ID_EMPRESA||empId(currentEmpresa())||empresaActiva;
+  return (db.ordenes||[]).filter(o=>String(o.ID_EMPRESA||o.empresaId||eid)===String(eid) && o.ESTADO!=='Eliminado').map(o=>ordId(o));
+}
+function clearDocTemporalHard(){
+  try{ limpiarFormulariosDocumento(); }catch(e){}
+  const ids=['docEquipos','eqNombre','eqMarca','eqModelo','eqSerie','eqCodigo','eqArea','actResponsable','actDni','actCargo','actZona','actOs','actSiaf','actObs','actObsTecnico','infEntidad','infAtencion','infAsunto','infAnte','infTrabajos','infReco','infGarantia','actFecha','infFecha'];
+  ids.forEach(id=>{const el=$(id); if(el) el.value='';});
+  try{clearCanvas('firmaCliente');clearCanvas('firmaTecnico');}catch(e){}
+  editActaId=null; editInformeId=null;
+}
+function enforceDocCompanyIsolation(force=false){
+  const sel=$('docOrden');
+  if(!sel) return;
+  const valid=activeOrderIds();
+  const selected=sel.value||'';
+  if(force || !selected || !valid.includes(selected)){
+    clearDocTemporalHard();
+    if(valid.length){ sel.value=valid[0]; } else { sel.value=''; }
+  }
+}
+function activarEmpresaSegura(id){
+  if(id!==empresaActiva){ clearDocTemporalHard(); }
+  empresaActiva=id;
+  localStorage.setItem('servitec_empresa_activa',empresaActiva||'');
+  storage(); renderAll(); enforceDocCompanyIsolation(true);
+}
+const __origSetEmpresaActiva=setEmpresaActiva;
+setEmpresaActiva=function(){
+  const nueva=$('empresaActiva')?$('empresaActiva').value:empresaActiva;
+  if(nueva!==empresaActiva){ clearDocTemporalHard(); }
+  const r=__origSetEmpresaActiva.apply(this,arguments);
+  enforceDocCompanyIsolation(true);
+  return r;
+};
+const __origShowView=showView;
+showView=function(v,btn){
+  const r=__origShowView.apply(this,arguments);
+  if(v==='informes') setTimeout(()=>enforceDocCompanyIsolation(false),0);
+  return r;
+};
+const __origRenderAll=renderAll;
+renderAll=function(){ const r=__origRenderAll.apply(this,arguments); enforceDocCompanyIsolation(false); return r; };
+const __origEditarActa=editarActa;
+editarActa=function(id){
+  const a=(db.actasConformidad||[]).find(x=>(x.id||x.ID_ACTA)===id);
+  if(a){ const valid=activeOrderIds(); if(a.ID_ORDEN && !valid.includes(a.ID_ORDEN)){ alert('Esta acta pertenece a otra empresa u orden no disponible. Cambia a la empresa correcta.'); return; } }
+  return __origEditarActa.apply(this,arguments);
+};
+const __origEditarInforme=editarInforme;
+editarInforme=function(id){
+  const i=(db.informesTecnicos||[]).find(x=>(x.id||x.ID_INFORME)===id);
+  if(i){ const valid=activeOrderIds(); if(i.ID_ORDEN && !valid.includes(i.ID_ORDEN)){ alert('Este informe pertenece a otra empresa u orden no disponible. Cambia a la empresa correcta.'); return; } }
+  return __origEditarInforme.apply(this,arguments);
+};
+['pullGoogle','syncPendientes','saveEmpresa','saveCliente','guardarCotizacion','anularCot','eliminarCot','guardarOrdenDirecta','anularOrden','eliminarOrden','guardarEjecucionActual','guardarActa','guardarInforme','eliminarActa','eliminarInforme','guardarRepuesto','guardarCorrelativo','guardarUsuario','eliminarUsuario'].forEach(n=>wrapAction(n,'Procesando '+n.replace(/([A-Z])/g,' $1').toLowerCase()+'...'));
+document.addEventListener('click',function(ev){
+  if(__servitecBusy && !ev.target.closest('#busyOverlay')){ ev.preventDefault(); ev.stopPropagation(); }
+},true);
+
+window.addEventListener('online',renderHeader);window.addEventListener('offline',renderHeader);window.onload=load;
+</script>
+</body></html>
